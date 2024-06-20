@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
   @Input()
   public tool!: Tool;
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit(): void {
     if( !this.tool ) {

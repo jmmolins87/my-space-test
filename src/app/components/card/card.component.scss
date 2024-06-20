@@ -1,0 +1,23 @@
+.card img {
+    padding: 15px;
+}
+.wrap-tags {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+.btn-go-site {
+    background: var(--brand-color-red, #f53a3a);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--text-color-button-white, #fff);
+    text-decoration: none;
+}

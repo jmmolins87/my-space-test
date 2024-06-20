@@ -8,15 +8,13 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogoDisplayComponent } from './components/logo-display/logo-display.component';
-import { WrapperImgsComponent } from './components/wrapper-imgs/wrapper-imgs.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
     FooterComponent,
-    LogoDisplayComponent,
-    WrapperImgsComponent
+    LogoDisplayComponent
   ],
   imports: [
     CommonModule,
@@ -27,8 +25,7 @@ import { WrapperImgsComponent } from './components/wrapper-imgs/wrapper-imgs.com
   exports: [
     NavbarComponent,
     FooterComponent,
-    LogoDisplayComponent,
-    WrapperImgsComponent
+    LogoDisplayComponent
   ]
 })
 export class SharedModule { }

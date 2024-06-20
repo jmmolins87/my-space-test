@@ -1,5 +1,7 @@
 <div class="card">
-    <p-card [header]="tool.title" subheader="Card Subheader">
+    <p-card 
+        [header]="tool.title" 
+        [subheader]="tool.subtitle">
         <ng-template pTemplate="header">
             <img 
                 [src]="tool.image"
@@ -7,12 +9,16 @@
                 [title]="tool.title" />
         </ng-template>
         <p>{{ tool.description }}</p>
-        <div class="wrap-tags">
-            <p-tag severity="info" [value]="tool.tags"></p-tag>
-        </div>
+        <ul class="wrap-tags">
+            <li *ngFor="let tag of tool.tags; let i = index">
+                <p-tag severity="info" [value]="tool.tags[i]"></p-tag>
+            </li>
+        </ul>
         <ng-template pTemplate="footer">
-            <p-button label="Save" icon="pi pi-check"></p-button>
-            <p-button label="Cancel" icon="pi pi-times"></p-button>
+            <a 
+                [href]="tool.link" 
+                target="_blank"
+                class="btn-go-site">Ir al sitio oficial</a>
         </ng-template>
     </p-card>
 </div>

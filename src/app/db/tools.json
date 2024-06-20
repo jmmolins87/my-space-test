@@ -4,26 +4,29 @@
         {
             "id": 1,
             "title": "Adobe Photoshop",
+            "subtitle": "Design",
             "link": "https://www.adobe.com/products/photoshop.html",
             "description": "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS.",
             "tags": ["design", "photo", "edition"],
             "favorite": true,
             "skill": 75,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Adobe_Photoshop_CS6_icon.svg/1200px-Adobe_Photoshop_CS6_icon.svg.png"
+            "image": "assets/tools/photoshop.png"
         },
         {
             "id": 2,
             "title": "Adobe Illustrator",
+            "subtitle": "Design",
             "link": "https://www.adobe.com/products/illustrator.html",
             "description": "Adobe Illustrator is a vector graphics editor and design program developed and marketed by Adobe Inc.",
             "tags": ["design", "vector", "edition"],
             "favorite": true,
             "skill": 60,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png"
+            "image": "assets/tools/illustrator.png"
         },
         {
             "id": 3,
             "title": "Adobe Indesign",
+            "subtitle": "Design",
             "link": "https://www.adobe.com/products/indesign.html",
             "description": "Adobe InDesign is a desktop publishing and typesetting software application produced by Adobe Systems.",
             "tags": ["design", "publishing", "edition"],
@@ -34,16 +37,18 @@
         {
             "id": 4,
             "title": "Adobe XD",
+            "subtitle": "Design",
             "link": "https://www.adobe.com/products/xd.html",
             "description": "Adobe XD is a vector-based user experience design tool for web apps and mobile apps, developed and published by Adobe Inc.",
             "tags": ["design", "prototyping", "wireframe"],
             "favorite": true,
             "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
         },
         {
             "id": 5,
             "title": "Figma",
+            "subtitle": "Design",
             "link": "https://www.figma.com/",
             "description": "Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows.",
             "tags": ["design", "prototyping", "wireframe"],
@@ -54,6 +59,7 @@
         {
             "id": 6,
             "title": "Visual Studio Code",
+            "subtitle": "Development",
             "link": "https://code.visualstudio.com/",
             "description": "Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS.",
             "tags": ["development", "code", "editor"],
@@ -64,6 +70,7 @@
         {
             "id": 7,
             "title": "Notion",
+            "subtitle": "Organization",
             "link": "https://www.notion.so/",
             "description": "Notion is an application that provides components such as databases, kanban boards, wikis, calendars and reminders.",
             "tags": ["organization", "notes", "tasks"],
@@ -74,6 +81,7 @@
         {
             "id": 8,
             "title": "Trello",
+            "subtitle": "Organization",
             "link": "https://trello.com/",
             "description": "Trello is a web-based list-making application for task management and project management.",
             "tags": ["organization", "notes", "tasks"],
@@ -84,6 +92,7 @@
         {
             "id": 9,
             "title": "Jira",
+            "subtitle": "Organization",
             "link": "https://www.atlassian.com/software/jira",
             "description": "Jira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.",
             "tags": ["organization", "notes", "tasks"],
@@ -94,6 +103,7 @@
         {
             "id": 10,
             "title": "Html",
+            "subtitle": "Development",
             "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
             "description": "HTML is the standard markup language for documents designed to be displayed in a web browser.",
             "tags": ["development", "web", "html"],
@@ -104,6 +114,7 @@
         {
             "id": 11,
             "title": "CSS",
+            "subtitle": "Development",
             "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
             "description": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.",
             "tags": ["development", "web", "css"],
@@ -114,6 +125,7 @@
         {
             "id": 12,
             "title": "sass",
+            "subtitle": "Development",
             "link": "https://sass-lang.com/",
             "description": "Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).",
             "tags": ["development", "web", "sass"],
@@ -124,6 +136,7 @@
         {
             "id": 13,
             "title": "Javascript",
+            "subtitle": "Development",
             "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
             "description": "JavaScript is a programming language that conforms to the ECMAScript specification.",
             "tags": ["development", "web", "javascript"],
@@ -134,6 +147,7 @@
         {
             "id": 14,
             "title": "Angular",
+            "subtitle": "Development",
             "link": "https://angular.io/",
             "description": "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.",
             "tags": ["development", "web", "angular"],
@@ -144,6 +158,7 @@
         {
             "id": 15,
             "title": "React",
+            "subtitle": "Development",
             "link": "https://reactjs.org/",
             "description": "React is an open-source front-end JavaScript library for building user interfaces or UI components.",
             "tags": ["development", "web", "react"],
@@ -154,12 +169,156 @@
         {
             "id": 16,
             "title": "GitHub",
+            "subtitle": "Development",
             "link": "https://github.com/",
             "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
             "tags": ["development", "web", "github"],
             "favorite": true,
             "skill": 60,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+        },
+        {
+            "id": 17,
+            "title": "Node.js",
+            "subtitle": "Development",
+            "link": "https://nodejs.org/",
+            "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.",
+            "tags": ["development", "web", "node"],
+            "favorite": true,
+            "skill": 50,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"
+        },
+        {
+            "id": 18,
+            "title": "Postman",
+            "subtitle": "Development",
+            "link": "https://www.postman.com/",
+            "description": "Postman is a collaboration platform for API development.",
+            "tags": ["development", "web", "postman"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Postman_icon.png/1200px-Postman_icon.png"
+        },
+        {
+            "id": 19,
+            "title": "Git",
+            "subtitle": "Development",
+            "link": "https://git-scm.com/",
+            "description": "Git is a distributed version-control system for tracking changes in source code during software development.",
+            "tags": ["development", "web", "git"],
+            "favorite": true,
+            "skill": 60,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png"
+        },
+        {
+            "id": 20,
+            "title": "Bootstrap",
+            "subtitle": "Development",
+            "link": "https://getbootstrap.com/",
+            "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.",
+            "tags": ["development", "web", "bootstrap"],
+            "favorite": true,
+            "skill": 60,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+        },
+        {
+            "id": 21,
+            "title": "Angular Material",
+            "subtitle": "Development",
+            "link": "https://material.angular.io/",
+            "description": "Angular Material is a UI component library for Angular developers.",
+            "tags": ["development", "web", "angular", "material"],
+            "favorite": true,
+            "skill": 50,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Angular_material_logo.svg/1200px-Angular_material_logo.svg.png"
+        },
+        {
+            "id": 22,
+            "title": "PrimeNg",
+            "subtitle": "Development",
+            "link": "https://www.primefaces.org/primeng/",
+            "description": "PrimeNG is a collection of rich UI components for Angular.",
+            "tags": ["development", "web", "angular", "primeng"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Angular_material_logo.svg/1200px-Angular_material_logo.svg.png"
+        },
+        {
+            "id": 23,
+            "title": "MongoDB",
+            "subtitle": "Development",
+            "link": "https://www.mongodb.com/",
+            "description": "MongoDB is a source-available cross-platform document-oriented database program.",
+            "tags": ["development", "web", "mongodb"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png"
+        },
+        {
+            "id": 24,
+            "title": "Wordpress",
+            "subtitle": "Development",
+            "link": "https://wordpress.com/",
+            "description": "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database.",
+            "tags": ["development", "web", "wordpress"],
+            "favorite": true,
+            "skill": 50,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png"
+        },
+        {
+            "id": 25,
+            "title": "Docker",
+            "subtitle": "Development",
+            "link": "https://www.docker.com/",
+            "description": "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.",
+            "tags": ["development", "web", "docker"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1200px-Docker_%28container_engine%29_logo.svg.png"
+        },
+        {
+            "id": 26,
+            "title": "Tailwind",
+            "subtitle": "Development",
+            "link": "https://tailwindcss.com/",
+            "description": "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.",
+            "tags": ["development", "web", "tailwind"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+        },
+        {
+            "id": 27,
+            "title": "Stenicl JS",
+            "subtitle": "Development",
+            "link": "https://stenciljs.com/",
+            "description": "Stencil is a toolchain for building reusable, scalable Design Systems.",
+            "tags": ["development", "web", "stencil"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+        },
+        {
+            "id": 28,
+            "title": "Storybook",
+            "subtitle": "Development",
+            "link": "https://storybook.js.org/",
+            "description": "Storybook is an open source tool for developing UI components in isolation for React, Vue, and Angular.",
+            "tags": ["development", "web", "storybook"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+        },
+        {
+            "id": 29,
+            "title": "Nest Js",
+            "subtitle": "Development",
+            "link": "https://nestjs.com/",
+            "description": "NestJS is a framework for building efficient, scalable Node.js server-side applications.",
+            "tags": ["development", "web", "nestjs"],
+            "favorite": true,
+            "skill": 40,
+            "image": "assets/img/"
         }
     ]
 }
