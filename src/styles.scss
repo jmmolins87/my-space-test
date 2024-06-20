@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+// ** PrimeNg Config Styles
+@import "primeng/resources/themes/bootstrap4-dark-purple/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+// ** My Variables
+:root {
+
+    // * Brand 
+    --brand-color-red: #f53a3a;
+    --brand-color-blue: #42d1f3;
+    
+    // * Colros
+    --bg-navbar: #343e4d33;
+    --bg-footer: #343e4d;
+    --text-color: #989899;
+
+    // * Fonts
+    // sizes
+    --font-size-text: 16px;
+    --font-size-text-footer: 14px;
+    --font-size-title-h1: 28px;
+    --font-size-title-h2: 22px;
+    --font-size-title-h2-mobile: 16px;
+    --font-size-title-h3: 18px;
+    // types
+    --font-family: "Montserrat", sans-serif;
+
+    // * Shadows
+    --title-shadow: 0 0 15px var(--brand-color-blue);
+}
+
+// * Global Styles
+html,
+body {
+    color: var(--text-color, #989899);
+    margin: 0;
+    font-family: var(--font-family, "Montserrat", sans-serif);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    font-size: var(--font-size-title-h1, 28px);
+    text-shadow: var(--title-shadow, 0 0 10px #42d1f3);
+}
+h2 {
+    font-size: var(--font-size-title-h2-mobile, 16px);
+    @media (min-width: 768px) {
+        font-size: var(--font-size-title-h2, 22px);
+    }
+}
+h3 {
+    font-size: var(--font-size-title-h3, 18px);
+}
+p, span, a {
+    font-size: var(--font-size-text, 16px);
+}
+
+/* Base styles */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+    .container {
+        max-width: 540px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/* Extra extra large devices (very large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}

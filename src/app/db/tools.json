@@ -1,0 +1,165 @@
+{
+    "tools": [
+
+        {
+            "id": 1,
+            "title": "Adobe Photoshop",
+            "link": "https://www.adobe.com/products/photoshop.html",
+            "description": "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS.",
+            "tags": ["design", "photo", "edition"],
+            "favorite": true,
+            "skill": 75,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Adobe_Photoshop_CS6_icon.svg/1200px-Adobe_Photoshop_CS6_icon.svg.png"
+        },
+        {
+            "id": 2,
+            "title": "Adobe Illustrator",
+            "link": "https://www.adobe.com/products/illustrator.html",
+            "description": "Adobe Illustrator is a vector graphics editor and design program developed and marketed by Adobe Inc.",
+            "tags": ["design", "vector", "edition"],
+            "favorite": true,
+            "skill": 60,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png"
+        },
+        {
+            "id": 3,
+            "title": "Adobe Indesign",
+            "link": "https://www.adobe.com/products/indesign.html",
+            "description": "Adobe InDesign is a desktop publishing and typesetting software application produced by Adobe Systems.",
+            "tags": ["design", "publishing", "edition"],
+            "favorite": true,
+            "skill": 50,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png"
+        },
+        {
+            "id": 4,
+            "title": "Adobe XD",
+            "link": "https://www.adobe.com/products/xd.html",
+            "description": "Adobe XD is a vector-based user experience design tool for web apps and mobile apps, developed and published by Adobe Inc.",
+            "tags": ["design", "prototyping", "wireframe"],
+            "favorite": true,
+            "skill": 50,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
+        },
+        {
+            "id": 5,
+            "title": "Figma",
+            "link": "https://www.figma.com/",
+            "description": "Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows.",
+            "tags": ["design", "prototyping", "wireframe"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png"
+        },
+        {
+            "id": 6,
+            "title": "Visual Studio Code",
+            "link": "https://code.visualstudio.com/",
+            "description": "Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS.",
+            "tags": ["development", "code", "editor"],
+            "favorite": true,
+            "skill": 80,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
+        },
+        {
+            "id": 7,
+            "title": "Notion",
+            "link": "https://www.notion.so/",
+            "description": "Notion is an application that provides components such as databases, kanban boards, wikis, calendars and reminders.",
+            "tags": ["organization", "notes", "tasks"],
+            "favorite": true,
+            "skill": 60,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Notion_app_logo.png/1200px-Notion_app_logo.png"
+        },
+        {
+            "id": 8,
+            "title": "Trello",
+            "link": "https://trello.com/",
+            "description": "Trello is a web-based list-making application for task management and project management.",
+            "tags": ["organization", "notes", "tasks"],
+            "favorite": true,
+            "skill": 50,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Trello_Logo.png/1200px-Trello_Logo.png"
+        },
+        {
+            "id": 9,
+            "title": "Jira",
+            "link": "https://www.atlassian.com/software/jira",
+            "description": "Jira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.",
+            "tags": ["organization", "notes", "tasks"],
+            "favorite": true,
+            "skill": 40,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Trello_Logo.png/1200px-Trello_Logo.png"
+        },
+        {
+            "id": 10,
+            "title": "Html",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "description": "HTML is the standard markup language for documents designed to be displayed in a web browser.",
+            "tags": ["development", "web", "html"],
+            "favorite": true,
+            "skill": 80,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+        },
+        {
+            "id": 11,
+            "title": "CSS",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "description": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.",
+            "tags": ["development", "web", "css"],
+            "favorite": true,
+            "skill": 70,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+        },
+        {
+            "id": 12,
+            "title": "sass",
+            "link": "https://sass-lang.com/",
+            "description": "Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).",
+            "tags": ["development", "web", "sass"],
+            "favorite": true,
+            "skill": 50,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png"
+        },
+        {
+            "id": 13,
+            "title": "Javascript",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "description": "JavaScript is a programming language that conforms to the ECMAScript specification.",
+            "tags": ["development", "web", "javascript"],
+            "favorite": true,
+            "skill": 80,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/1200px-JavaScript-logo.png"
+        },
+        {
+            "id": 14,
+            "title": "Angular",
+            "link": "https://angular.io/",
+            "description": "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.",
+            "tags": ["development", "web", "angular"],
+            "favorite": true,
+            "skill": 50,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+        },
+        {
+            "id": 15,
+            "title": "React",
+            "link": "https://reactjs.org/",
+            "description": "React is an open-source front-end JavaScript library for building user interfaces or UI components.",
+            "tags": ["development", "web", "react"],
+            "favorite": true,
+            "skill": 60,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+        },
+        {
+            "id": 16,
+            "title": "GitHub",
+            "link": "https://github.com/",
+            "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
+            "tags": ["development", "web", "github"],
+            "favorite": true,
+            "skill": 60,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+        }
+    ]
+}
