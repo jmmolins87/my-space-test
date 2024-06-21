@@ -1,4 +1,9 @@
 <div class="card">
+    <div class="wrap-icon-favorite">
+        <i 
+            [ngStyle]="{'color':tool.favorite === true ? 'var(--brand-color-red)' : ''}" 
+            class="pi pi-heart-fill"></i>
+    </div>
     <p-card 
         [header]="tool.title" 
         [subheader]="tool.subtitle">
@@ -24,8 +29,10 @@
         <ng-template pTemplate="footer">
             <a 
                 [href]="tool.link" 
+                pRipple
                 target="_blank"
-                class="btn-go-site">Ir al sitio oficial</a>
+                class="btn-go-site">Ir al sitio oficial
+            </a>
         </ng-template>
     </p-card>
 </div>

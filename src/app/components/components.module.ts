@@ -6,13 +6,15 @@ import { PipesModule } from '../pipes/pipes.module';
 
 import { CardComponent } from './card/card.component';
 import { AlertComponent } from './alert/alert.component';
+import { ChartComponent } from './chart/chart.component';
 
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    AlertComponent
+    AlertComponent,
+    ChartComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { AlertComponent } from './alert/alert.component';
   ],
   exports: [
     CardComponent,
-    AlertComponent
+    AlertComponent,
+    ChartComponent
   ]
 })
 export class ComponentsModule { }

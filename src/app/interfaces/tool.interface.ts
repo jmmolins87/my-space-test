@@ -6,7 +6,12 @@ export interface Tool {
     description: string,
     tags: string,
     favorite: boolean,
-    skill: number,
     image: string,
-    meta: string
+    meta: string,
+    skill: number,
+    restSkill: number,
+    colorSkill: string,
+    colorRestSkill: string,
+    colorHoverSkill: string,
+    colorHoverRestSkill: string
 }

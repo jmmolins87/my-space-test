@@ -5,9 +5,10 @@ import { switchMap } from 'rxjs';
 
 import { PagesService } from '../../services/pages-services.service';
 
-import { Tool } from '../../interfaces/tool.interface';
-
 import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
+
+import { Tool } from '../../interfaces/tool.interface';
+import { DataChart } from './../../interfaces/data-chart.interface';
 
 
 @Component({
@@ -17,23 +18,36 @@ import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
 })
 export class ToolComponent implements OnInit {
 
-  public tool?: Tool;
-  public textBtnBack: string = 'Volver';
-  public toolSkeleton = typeSkeleton.TOOL;
+  public tool!: Tool;
+  public textBtnBack: string = 'Volver a la lista de herramientas';
+  public toolSkeleton = typeSkeleton.TOOL; 
+  public showSkeleton: boolean = false;
+  public dataChartPhotoshop: DataChart;
 
   constructor( 
     private _router: Router,
     private _toolById: PagesService, 
     private _activatedRoute: ActivatedRoute 
-  ) { }
+  ) { 
+    this.dataChartPhotoshop = {
+      skill: 75,
+      restSkill: 25,
+      colorSkill: '--photoshop-primary',
+      colorRestSkill: '--photoshop-primary-hover',
+      colorHoverSkill: '--photoshop-secondary',
+      colorHoverRestSkill: '--photoshop-secondary-hover'
+    }
+  }
 
   ngOnInit(): void {
+    setTimeout(() => this.showSkeleton = true, 3000);
     this._activatedRoute.params.pipe(
       switchMap(({ id }) => this._toolById.getToolById( id ))
     ).subscribe( tool => {
       if( !tool) return this._router.navigate(['/404']);
 
       this.tool = tool;
+      this.showSkeleton = false;
       return;
     })
   }
