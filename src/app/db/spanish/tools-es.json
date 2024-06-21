@@ -4,32 +4,32 @@
         {
             "id": 1,
             "title": "Adobe Photoshop",
-            "subtitle": "Design",
+            "subtitle": "Diseño",
             "link": "https://www.adobe.com/products/photoshop.html",
-            "description": "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS.",
-            "tags": ["design", "photo", "edition"],
+            "description": "Adobe Photoshop es un editor de gráficos rasterizados desarrollado y publicado por Adobe Inc. para Windows y macOS.",
+            "tags": ["Edición de imágenes", "Diseño gráfico", "Retoque fotográfico", "Arte digital", "Creative Cloud", "Manipulación fotográfica"],
             "favorite": true,
             "skill": 75,
-            "image": "assets/tools/photoshop.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
         },
         {
             "id": 2,
             "title": "Adobe Illustrator",
-            "subtitle": "Design",
+            "subtitle": "Diseño",
             "link": "https://www.adobe.com/products/illustrator.html",
             "description": "Adobe Illustrator is a vector graphics editor and design program developed and marketed by Adobe Inc.",
-            "tags": ["design", "vector", "edition"],
+            "tags": ["Gráficos vectoriales", "Ilustración", "Diseño gráfico", "Diseño de logotipos", "Tipografía", "Herramientas de trazado", "Formas y líneas"],
             "favorite": true,
             "skill": 60,
-            "image": "assets/tools/illustrator.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
         },
         {
             "id": 3,
             "title": "Adobe Indesign",
-            "subtitle": "Design",
+            "subtitle": "Diseño",
             "link": "https://www.adobe.com/products/indesign.html",
             "description": "Adobe InDesign is a desktop publishing and typesetting software application produced by Adobe Systems.",
-            "tags": ["design", "publishing", "edition"],
+            "tags": ["Autoedición", "Diseño de páginas", "Tipografía", "Diseño gráfico", "Edición", "Diseño de impresión", "Edición digital", "Documentos interactivos"],
             "favorite": true,
             "skill": 50,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png"
@@ -37,24 +37,24 @@
         {
             "id": 4,
             "title": "Adobe XD",
-            "subtitle": "Design",
+            "subtitle": "Diseño",
             "link": "https://www.adobe.com/products/xd.html",
             "description": "Adobe XD is a vector-based user experience design tool for web apps and mobile apps, developed and published by Adobe Inc.",
-            "tags": ["design", "prototyping", "wireframe"],
+            "tags": ["Diseño UI", "Diseño UX", "Prototipos", "Wireframing", "Colaboración", "Diseño responsivo"],
             "favorite": true,
             "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
+            "image": "https://cdn.worldvectorlogo.com/logos/adobe-xd-2.svg"
         },
         {
             "id": 5,
             "title": "Figma",
-            "subtitle": "Design",
+            "subtitle": "Diseño",
             "link": "https://www.figma.com/",
             "description": "Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows.",
-            "tags": ["design", "prototyping", "wireframe"],
+            "tags": ["Herramientas de diseño", "Diseño de interfaz de usuario", "Diseño de experiencia de usuario", "Prototipos", "Diseño web", "Diseño gráfico", "Gráficos vectoriales", "Diseño colaborativo", "Sistemas de diseño", "Prototipos interactivos" ],
             "favorite": true,
             "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1365px-Figma-logo.svg.png"
         },
         {
             "id": 6,
@@ -62,10 +62,10 @@
             "subtitle": "Development",
             "link": "https://code.visualstudio.com/",
             "description": "Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS.",
-            "tags": ["development", "code", "editor"],
+            "tags": ["Edición de código", "Resaltado de sintaxis", "Autocompletado", "Fragmentos de código", "Edición con varios cursores", "Navegación de código", "IntelliSense", "Refactorización de código"],
             "favorite": true,
             "skill": 80,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
+            "image": "https://seeklogo.com/images/V/visual-studio-code-logo-449D71944F-seeklogo.com.png"
         },
         {
             "id": 7,
@@ -73,10 +73,10 @@
             "subtitle": "Organization",
             "link": "https://www.notion.so/",
             "description": "Notion is an application that provides components such as databases, kanban boards, wikis, calendars and reminders.",
-            "tags": ["organization", "notes", "tasks"],
+            "tags": ["Productividad", "Gestión de proyectos", "Base de datos", "Gestión del conocimiento", "Colaboración", "Toma de notas", "Gestión de tareas"],
             "favorite": true,
             "skill": 60,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Notion_app_logo.png/1200px-Notion_app_logo.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png"
         },
         {
             "id": 8,
@@ -84,10 +84,10 @@
             "subtitle": "Organization",
             "link": "https://trello.com/",
             "description": "Trello is a web-based list-making application for task management and project management.",
-            "tags": ["organization", "notes", "tasks"],
+            "tags": ["Organización", "Notas", "Por hacer", "En proceso", "Completado", "En espera", "Bloqueado", "Revisión requerida"],
             "favorite": true,
             "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Trello_Logo.png/1200px-Trello_Logo.png"
+            "image": "https://cdn.worldvectorlogo.com/logos/trello-logo.svg"
         },
         {
             "id": 9,
@@ -95,10 +95,10 @@
             "subtitle": "Organization",
             "link": "https://www.atlassian.com/software/jira",
             "description": "Jira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.",
-            "tags": ["organization", "notes", "tasks"],
+            "tags": ["Organización", "Notas", "Prioridad y gravedad", "Tipo de trabajo", "Estado y flujo de trabajo", "Componentes y módulos", "Lanzamiento y versiones", "Equipos y roles", "Proyectos y clientes", "Tiempo y programación", "Etiquetas técnicas", "Varios"],
             "favorite": true,
             "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Trello_Logo.png/1200px-Trello_Logo.png"
+            "image": "https://cdn.worldvectorlogo.com/logos/jira-3.svg"
         },
         {
             "id": 10,
@@ -120,7 +120,7 @@
             "tags": ["development", "web", "css"],
             "favorite": true,
             "skill": 70,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+            "image": "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"
         },
         {
             "id": 12,
@@ -131,7 +131,7 @@
             "tags": ["development", "web", "sass"],
             "favorite": true,
             "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png"
+            "image": "https://cdn.freebiesupply.com/logos/large/2x/sass-1-logo-png-transparent.png"
         },
         {
             "id": 13,
@@ -197,7 +197,7 @@
             "tags": ["development", "web", "postman"],
             "favorite": true,
             "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Postman_icon.png/1200px-Postman_icon.png"
+            "image": "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png"
         },
         {
             "id": 19,
@@ -230,7 +230,7 @@
             "tags": ["development", "web", "angular", "material"],
             "favorite": true,
             "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Angular_material_logo.svg/1200px-Angular_material_logo.svg.png"
+            "image": "https://cdn.jsdelivr.net/gh/angular-material-extensions/pages@master/assets/angular-material-extensions-logo.png"
         },
         {
             "id": 22,
@@ -241,7 +241,7 @@
             "tags": ["development", "web", "angular", "primeng"],
             "favorite": true,
             "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Angular_material_logo.svg/1200px-Angular_material_logo.svg.png"
+            "image": "https://soka.gitlab.io/angular/ui/primeng/01-primeng-intro/img/primeng-2.png"
         },
         {
             "id": 23,
@@ -285,7 +285,7 @@
             "tags": ["development", "web", "tailwind"],
             "favorite": true,
             "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+            "image": "https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg"
         },
         {
             "id": 27,
@@ -296,7 +296,7 @@
             "tags": ["development", "web", "stencil"],
             "favorite": true,
             "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+            "image": "https://stenciljs.com/stencil-og.png"
         },
         {
             "id": 28,
@@ -307,7 +307,7 @@
             "tags": ["development", "web", "storybook"],
             "favorite": true,
             "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+            "image": "https://static-00.iconduck.com/assets.00/storybook-icon-2048x410-m440b17u.png"
         },
         {
             "id": 29,
@@ -318,7 +318,7 @@
             "tags": ["development", "web", "nestjs"],
             "favorite": true,
             "skill": 40,
-            "image": "assets/img/"
+            "image": "https://cdn.icon-icons.com/icons2/2699/PNG/512/nestjs_logo_icon_169927.png"
         }
     ]
 }

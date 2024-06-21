@@ -3,4 +3,10 @@
         width: initial;
         display: block;
     }
+    .wrap-button-back {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }

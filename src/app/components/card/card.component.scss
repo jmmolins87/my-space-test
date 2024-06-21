@@ -1,6 +1,16 @@
 .card img {
     padding: 15px;
 }
+.description {
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: auto;
+    max-height: 65px;
+}
 .wrap-tags {
     display: flex;
     box-sizing: border-box;

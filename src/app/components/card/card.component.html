@@ -8,7 +8,14 @@
                 [alt]="tool.title" 
                 [title]="tool.title" />
         </ng-template>
-        <p>{{ tool.description }}</p>
+        <p class="description">{{ tool.description }}</p>
+        <p-button 
+            [routerLink]="['/tool', tool.id]"
+            label="Leer más" 
+            [outlined]="true" 
+            severity="success"
+            icon="pi pi-plus" 
+            iconPos="right" />
         <ul class="wrap-tags">
             <li *ngFor="let tag of tool.tags; let i = index">
                 <p-tag severity="info" [value]="tool.tags[i]"></p-tag>

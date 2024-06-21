@@ -6,6 +6,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { MenubarModule } from 'primeng/menubar';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { ScrollTopModule } from 'primeng/scrolltop';
+import { SkeletonModule } from 'primeng/skeleton';
 import { TagModule } from 'primeng/tag';
 
 
@@ -17,6 +18,7 @@ import { TagModule } from 'primeng/tag';
     MenubarModule,
     ProgressSpinnerModule,
     ScrollTopModule,
+    SkeletonModule,
     TagModule
   ]
 })

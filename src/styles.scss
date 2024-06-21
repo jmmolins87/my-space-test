@@ -18,6 +18,17 @@
     --bg-footer: #343e4d;
     --text-color: #989899;
     --text-color-button-white: #fff
+    // alert
+    --alert-success: #28a745;
+    --bg-alert-success: #20a53f2f;
+    --alert-danger: var(--brand-color-red);
+    --bg-alert-danger: #8a0b0b48;
+    --alert-info: var(--brand-color-blue);
+    --bg-alert-info: #1b8ba75b;
+    --alert-warning: #ecec10;
+    --bg-alert-warning: #ecec105b;
+    // Skeleton
+    --skeleton-color: #353131;
 
     // * Fonts
     // sizes
@@ -29,9 +40,6 @@
     --font-size-title-h3: 18px;
     // types
     --font-family: "Montserrat", sans-serif;
-
-    // * Shadows
-    --title-shadow: 0 0 15px var(--brand-color-blue);
 }
 
 // * Global Styles
@@ -46,7 +54,8 @@ body {
 }
 h1 {
     font-size: var(--font-size-title-h1, 28px);
-    text-shadow: var(--title-shadow, 0 0 10px #42d1f3);
+    color: var(--brand-color-blue);
+    border-bottom: 1px solid var(--brand-color-blue);
 }
 h2 {
     font-size: var(--font-size-title-h2-mobile, 16px);
@@ -105,3 +114,9 @@ p, span, a {
         max-width: 1320px;
     }
 }
+
+// * Utilities
+.mt-1 { margin-top: 10px !important; }
+.mt-2 { margin-top: 15px !important; }
+.mt-3 { margin-top: 20px !important; }
+.mt-4 { margin-top: 25px !important; }

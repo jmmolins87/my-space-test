@@ -1,0 +1,11 @@
+<app-skeleton *ngIf="true" [typeSkeleton]="toolSkeleton" />
+<div *ngIf="false" class="wrap-tool">
+    <h1 class="tool-title">{{ tool?.title }}</h1>
+    <div class="wrap-button-back">
+        <p-button 
+            (click)="goBack()"
+            [label]="textBtnBack" 
+            [outlined]="true" 
+            severity="danger" />
+    </div>
+</div>

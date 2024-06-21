@@ -5,12 +5,14 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { PipesModule } from '../pipes/pipes.module';
 
 import { CardComponent } from './card/card.component';
+import { AlertComponent } from './alert/alert.component';
 
 
 
 @NgModule({
   declarations: [
-    CardComponent
+    CardComponent,
+    AlertComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { CardComponent } from './card/card.component';
     PipesModule
   ],
   exports: [
-    CardComponent
+    CardComponent,
+    AlertComponent
   ]
 })
 export class ComponentsModule { }

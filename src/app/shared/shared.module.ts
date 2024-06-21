@@ -5,27 +5,30 @@ import { FormsModule } from '@angular/forms';
 
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogoDisplayComponent } from './components/logo-display/logo-display.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SkeletonComponent } from './components/skeleton/skeleton.component';
 
 
 @NgModule({
   declarations: [
-    NavbarComponent,
     FooterComponent,
-    LogoDisplayComponent
+    LogoDisplayComponent,
+    NavbarComponent,
+    SkeletonComponent
   ],
   imports: [
     CommonModule,
-    HttpClientModule,
     FormsModule,
+    HttpClientModule,
     PrimeNgModule
   ],
   exports: [
-    NavbarComponent,
     FooterComponent,
-    LogoDisplayComponent
+    LogoDisplayComponent,
+    NavbarComponent,
+    SkeletonComponent
   ]
 })
 export class SharedModule { }
