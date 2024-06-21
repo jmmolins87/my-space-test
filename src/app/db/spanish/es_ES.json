@@ -1,6 +1,6 @@
 {
     "tools": [
-
+        
         {
             "id": 1,
             "title": "Adobe Photoshop",
@@ -26,8 +26,13 @@
             "description": "Adobe Illustrator es un programa de diseño y editor de gráficos vectoriales desarrollado y comercializado por Adobe Inc. Es ampliamente utilizado por diseñadores gráficos y artistas para crear y editar gráficos vectoriales. A diferencia de las imágenes rasterizadas, los gráficos vectoriales pueden ser escalados a cualquier tamaño sin perder calidad. Illustrator es conocido por sus potentes herramientas de dibujo y trazado, su capacidad para crear logotipos y tipografías, y su integración con otras aplicaciones de Adobe.",
             "tags": ["Gráficos vectoriales", "Ilustración", "Diseño gráfico", "Diseño de logotipos", "Tipografía", "Herramientas de trazado", "Formas y líneas"],
             "favorite": false,
-            "skill": 60,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png",
+            "skill": 55,
+            "restSkill": 45,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 3,
@@ -37,8 +42,13 @@
             "description": "InDesign es un software de Adobe que se utiliza principalmente para el diseño de publicaciones y materiales de marketing. Permite a los usuarios crear diseños de página para impresión o distribución digital con una gran cantidad de herramientas y características. Los usuarios pueden diseñar folletos, revistas, libros, carteles y más, con control total sobre la tipografía, el color, las imágenes, los objetos y todo lo demás que se incluye en un diseño de página. InDesign también se integra con otras aplicaciones de Adobe, lo que permite un flujo de trabajo más fluido entre programas.",
             "tags": ["Autoedición", "Diseño de páginas", "Tipografía", "Diseño gráfico", "Edición", "Diseño de impresión", "Edición digital", "Documentos interactivos"],
             "favorite": true,
-            "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 4,
@@ -48,8 +58,13 @@
             "description": "Adobe XD es una herramienta de diseño de experiencia de usuario basada en vectores para aplicaciones web y aplicaciones móviles, desarrollada y publicada por Adobe Inc. Permite a los diseñadores crear wireframes, prototipos interactivos y maquetas de diseño. Adobe XD también facilita la colaboración entre equipos, permitiendo a múltiples usuarios trabajar en el mismo proyecto al mismo tiempo. Es parte de Adobe Creative Cloud, lo que permite una integración fluida con otras aplicaciones de Adobe.",
             "tags": ["Diseño UI", "Diseño UX", "Prototipos", "Wireframing", "Colaboración", "Diseño responsivo"],
             "favorite": true,
-            "skill": 50,
-            "image": "https://cdn.worldvectorlogo.com/logos/adobe-xd-2.svg"
+            "image": "https://cdn.worldvectorlogo.com/logos/adobe-xd-2.svg",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 5,
@@ -59,8 +74,13 @@
             "description": "Figma es una herramienta de edición de gráficos vectoriales y prototipado que es principalmente basada en la web, con características adicionales fuera de línea habilitadas por aplicaciones de escritorio para macOS y Windows. Figma es conocido por su enfoque en la colaboración en tiempo real, lo que permite a múltiples usuarios trabajar en el mismo diseño al mismo tiempo. Los diseñadores pueden crear interfaces de usuario, prototipos interactivos, y más, todo dentro de Figma. También ofrece herramientas para el diseño de sistemas, permitiendo a los equipos crear y mantener bibliotecas de diseño coherentes.",
             "tags": ["Herramientas de diseño", "Diseño de interfaz de usuario", "Diseño de experiencia de usuario", "Prototipos", "Diseño web", "Diseño gráfico", "Gráficos vectoriales", "Diseño colaborativo", "Sistemas de diseño", "Prototipos interactivos" ],
             "favorite": true,
-            "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1365px-Figma-logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1365px-Figma-logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 6,
@@ -70,8 +90,13 @@
             "description": "Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Ofrece características como resaltado de sintaxis, autocompletado de código, fragmentos de código, edición con varios cursores, navegación de código, IntelliSense y refactorización de código. Es ampliamente utilizado por los desarrolladores para una variedad de lenguajes de programación y marcos de trabajo. Visual Studio Code también admite una amplia gama de extensiones para mejorar su funcionalidad.",
             "tags": ["Edición de código", "Resaltado de sintaxis", "Autocompletado", "Fragmentos de código", "Edición con varios cursores", "Navegación de código", "IntelliSense", "Refactorización de código"],
             "favorite": true,
-            "skill": 80,
-            "image": "https://seeklogo.com/images/V/visual-studio-code-logo-449D71944F-seeklogo.com.png"
+            "image": "https://seeklogo.com/images/V/visual-studio-code-logo-449D71944F-seeklogo.com.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 7,
@@ -81,8 +106,13 @@
             "description": "Notion es una aplicación que proporciona componentes como bases de datos, tableros kanban, wikis, calendarios y recordatorios. Es una herramienta de productividad que permite a los usuarios organizar su trabajo y su vida personal en un solo lugar. Notion es conocido por su flexibilidad y personalización, permitiendo a los usuarios crear su propio sistema de gestión de tareas, notas, documentos y más. También facilita la colaboración en equipo, permitiendo a múltiples usuarios trabajar en el mismo espacio de trabajo.",
             "tags": ["Productividad", "Gestión de proyectos", "Base de datos", "Gestión del conocimiento", "Colaboración", "Toma de notas", "Gestión de tareas"],
             "favorite": true,
-            "skill": 60,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 8,
@@ -92,8 +122,13 @@
             "description": "Trello es una aplicación web para la gestión de tareas y la gestión de proyectos basada en el método Kanban. Los usuarios pueden crear tableros, en los que se pueden agregar listas con tarjetas. Estas tarjetas representan tareas que se mueven entre las listas que representan el progreso del proyecto. Trello es conocido por su simplicidad y flexibilidad, permitiendo a los usuarios personalizar sus tableros y tarjetas para adaptarse a una variedad de flujos de trabajo y proyectos. También facilita la colaboración en equipo, permitiendo a múltiples usuarios trabajar en el mismo tablero.",
             "tags": ["Organización", "Notas", "Por hacer", "En proceso", "Completado", "En espera", "Bloqueado", "Revisión requerida"],
             "favorite": false,
-            "skill": 50,
-            "image": "https://cdn.worldvectorlogo.com/logos/trello-logo.svg"
+            "image": "https://cdn.worldvectorlogo.com/logos/trello-logo.svg",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 9,
@@ -103,8 +138,13 @@
             "description": "Jira es un producto de seguimiento de problemas desarrollado por Atlassian que permite el seguimiento de errores y la gestión de proyectos ágiles. Los usuarios pueden crear y asignar tareas, seguir el progreso del proyecto y colaborar con su equipo en un solo lugar. Jira es conocido por su capacidad para adaptarse a una variedad de flujos de trabajo y proyectos, desde el desarrollo de software hasta la gestión de proyectos empresariales. También ofrece una variedad de características y herramientas para la gestión de proyectos, incluyendo tableros Kanban, gráficos de Gantt, informes de proyectos y más.",
             "tags": ["Organización", "Notas", "Prioridad y gravedad", "Tipo de trabajo", "Estado y flujo de trabajo", "Componentes y módulos", "Lanzamiento y versiones", "Equipos y roles", "Proyectos y clientes", "Tiempo y programación", "Etiquetas técnicas", "Varios"],
             "favorite": true,
-            "skill": 40,
-            "image": "https://cdn.worldvectorlogo.com/logos/jira-3.svg"
+            "image": "https://cdn.worldvectorlogo.com/logos/jira-3.svg",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 10,
@@ -114,8 +154,13 @@
             "description": "HTML5 es la quinta y actual versión de HTML (HyperText Markup Language), el lenguaje de marcado estándar para la creación de páginas web. HTML5 introduce una serie de nuevas etiquetas y atributos que reflejan el uso típico de los sitios web modernos. Algunas de estas nuevas características incluyen elementos para multimedia como <video> y <audio>, así como elementos semánticos como <article>, <section>, <header> y <footer>. HTML5 también ofrece mejoras en formularios, gráficos y API para la creación de aplicaciones web ricas.",
             "tags": ["development", "web", "html"],
             "favorite": true,
-            "skill": 80,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 11,
@@ -125,8 +170,13 @@
             "description": "CSS (Cascading Style Sheets) es un lenguaje de hoja de estilos que se utiliza para describir la presentación de un documento escrito en un lenguaje de marcado como HTML. CSS se utiliza para controlar el diseño y la apariencia de las páginas web, incluyendo el diseño, los colores, las fuentes y las animaciones. También permite a los diseñadores adaptar la presentación a diferentes tipos de dispositivos, como pantallas grandes, tablets, o teléfonos móviles. CSS es uno de los tres lenguajes fundamentales para la creación de contenido web, junto con HTML y JavaScript.",
             "tags": ["development", "web", "css"],
             "favorite": true,
-            "skill": 70,
-            "image": "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"
+            "image": "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 12,
@@ -136,8 +186,13 @@
             "description": "Sass (Syntactically Awesome Stylesheets) es un preprocesador de CSS que ayuda a simplificar y mejorar la escritura de CSS. Permite el uso de variables, anidamiento, mixins, herencia y otras características que no están disponibles en CSS puro. Sass tiene dos sintaxis: la sintaxis indented (similar a Haml) y la sintaxis SCSS (similar a CSS). El código Sass se compila en CSS estándar antes de ser servido al navegador.",
             "tags": ["development", "web", "sass"],
             "favorite": true,
-            "skill": 50,
-            "image": "https://cdn.freebiesupply.com/logos/large/2x/sass-1-logo-png-transparent.png"
+            "image": "https://cdn.freebiesupply.com/logos/large/2x/sass-1-logo-png-transparent.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 13,
@@ -147,8 +202,13 @@
             "description": "JavaScript es un lenguaje de programación que se ajusta a la especificación ECMAScript. Es uno de los tres lenguajes fundamentales para la creación de contenido web, junto con HTML y CSS. JavaScript permite a los desarrolladores crear interacciones dinámicas en las páginas web, incluyendo la manipulación del DOM, el manejo de eventos, la creación de animaciones y mucho más. También se utiliza en el desarrollo de servidores y aplicaciones de backend a través de entornos como Node.js.",
             "tags": ["development", "web", "javascript"],
             "favorite": true,
-            "skill": 80,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/1200px-JavaScript-logo.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/1200px-JavaScript-logo.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 14,
@@ -158,8 +218,13 @@
             "description": "Angular es un marco de aplicación web de código abierto basado en TypeScript dirigido por el equipo de Angular en Google y por una comunidad de individuos y corporaciones. Angular es conocido por su enfoque en la creación de aplicaciones de una sola página (SPA) y ofrece características como enlace de datos bidireccional, inyección de dependencias, y una arquitectura basada en componentes. También proporciona herramientas para pruebas unitarias y de extremo a extremo, lo que facilita el desarrollo de aplicaciones de alta calidad.",
             "tags": ["development", "web", "angular"],
             "favorite": true,
-            "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 15,
@@ -169,8 +234,13 @@
             "description": "React es una biblioteca de JavaScript de código abierto para construir interfaces de usuario o componentes de UI. Fue desarrollada por Facebook y es ampliamente utilizada para desarrollar interfaces de usuario para aplicaciones web de una sola página. React permite a los desarrolladores crear componentes reutilizables de UI y manejar el estado y la lógica de la UI de manera eficiente. También utiliza un DOM virtual para mejorar el rendimiento al actualizar y renderizar componentes.",
             "tags": ["development", "web", "react"],
             "favorite": false,
-            "skill": 60,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 16,
@@ -180,8 +250,13 @@
             "description": "GitHub es un proveedor de alojamiento en Internet para el desarrollo de software y el control de versiones utilizando Git. Es una plataforma donde los desarrolladores pueden colaborar en proyectos, realizar un seguimiento de los problemas, hacer solicitudes de extracción y revisar el código. GitHub también ofrece características como acciones de GitHub para la integración continua y la entrega continua (CI/CD), GitHub Pages para alojar sitios web, y mucho más.",
             "tags": ["development", "web", "github"],
             "favorite": true,
-            "skill": 60,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 17,
@@ -191,8 +266,13 @@
             "description": "Node.js es un entorno de ejecución de JavaScript de código abierto y multiplataforma que se ejecuta en el motor V8 y ejecuta código JavaScript fuera de un navegador web. Node.js permite a los desarrolladores crear servidores y herramientas de desarrollo de scripts del lado del servidor. Es conocido por su modelo de E/S sin bloqueo y orientado a eventos, que lo hace eficiente y adecuado para aplicaciones en tiempo real que se ejecutan en dispositivos distribuidos.",
             "tags": ["development", "web", "node"],
             "favorite": false,
-            "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 18,
@@ -202,8 +282,13 @@
             "description": "Postman es una plataforma de colaboración para el desarrollo de API. Permite a los desarrolladores probar, documentar y monitorizar las API de manera eficiente. Postman ofrece una interfaz de usuario intuitiva que facilita la construcción de solicitudes y la lectura de respuestas, el manejo de autenticación, y la reutilización de variables. También permite a los equipos colaborar en el desarrollo de API, compartir colecciones y establecer pruebas automatizadas.",
             "tags": ["development", "web", "postman"],
             "favorite": false,
-            "skill": 40,
-            "image": "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png"
+            "image": "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 19,
@@ -213,8 +298,13 @@
             "description": "Git es un sistema de control de versiones distribuido que permite realizar un seguimiento de los cambios en el código fuente durante el desarrollo de software. Fue diseñado por Linus Torvalds, el creador de Linux, para manejar proyectos con eficiencia y velocidad. Git es conocido por su robustez, su rendimiento y su flexibilidad. Permite a los desarrolladores trabajar en diferentes ramas de desarrollo simultáneamente, fusionar cambios entre ramas y colaborar en proyectos con otros desarrolladores.",
             "tags": ["development", "web", "git"],
             "favorite": true,
-            "skill": 60,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 20,
@@ -224,8 +314,13 @@
             "description": "Bootstrap es un marco de CSS gratuito y de código abierto dirigido al desarrollo web de front-end responsivo y orientado a dispositivos móviles. Proporciona plantillas de diseño basadas en HTML y CSS para tipografía, formularios, botones, tablas, navegación, modales, carruseles y muchos otros componentes de la interfaz de usuario. También tiene soporte opcional para JavaScript para crear componentes interactivos. Bootstrap es conocido por su sistema de cuadrícula flexible y responsivo, y por su amplia compatibilidad con todos los navegadores y dispositivos modernos.",
             "tags": ["development", "web", "bootstrap"],
             "favorite": true,
-            "skill": 60,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 21,
@@ -235,8 +330,13 @@
             "description": "Angular Material es una biblioteca de componentes de interfaz de usuario para los desarrolladores de Angular. Proporciona un conjunto de componentes de UI preconstruidos basados en Material Design, un lenguaje de diseño desarrollado por Google. Los componentes de Angular Material incluyen botones, menús, barras de herramientas, cuadros de diálogo, tarjetas y más. También proporciona herramientas para la disposición de la interfaz de usuario, como un sistema de cuadrícula flexible y herramientas para la manipulación de listas.",
             "tags": ["development", "web", "angular", "material"],
             "favorite": false,
-            "skill": 50,
-            "image": "https://cdn.jsdelivr.net/gh/angular-material-extensions/pages@master/assets/angular-material-extensions-logo.png"
+            "image": "https://cdn.jsdelivr.net/gh/angular-material-extensions/pages@master/assets/angular-material-extensions-logo.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 22,
@@ -246,8 +346,13 @@
             "description": "PrimeNG es una colección de componentes de interfaz de usuario ricos para Angular. Proporciona una variedad de componentes de UI preconstruidos que incluyen tablas de datos, diálogos, paneles, menús y muchos otros. PrimeNG es conocido por su flexibilidad y personalización, permitiendo a los desarrolladores adaptar los componentes a sus necesidades. También es compatible con los temas de diseño de Angular, lo que permite una integración fluida con el resto de su aplicación Angular.",
             "tags": ["development", "web", "angular", "primeng"],
             "favorite": true,
-            "skill": 40,
-            "image": "https://soka.gitlab.io/angular/ui/primeng/01-primeng-intro/img/primeng-2.png"
+            "image": "https://soka.gitlab.io/angular/ui/primeng/01-primeng-intro/img/primeng-2.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 23,
@@ -257,8 +362,13 @@
             "description": "MongoDB es un programa de base de datos orientado a documentos, disponible en código fuente, y multiplataforma. En lugar de almacenar los datos en tablas como las bases de datos relacionales tradicionales, MongoDB almacena los datos en estructuras tipo documentos flexibles en formato BSON (una variante de JSON), lo que permite la integración de datos de diferentes tipos y la capacidad de cambiar los esquemas con el tiempo. MongoDB es conocido por su escalabilidad, rendimiento y flexibilidad.",
             "tags": ["development", "web", "mongodb"],
             "favorite": false,
-            "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 24,
@@ -268,8 +378,13 @@
             "description": "WordPress es un sistema de gestión de contenido (CMS) gratuito y de código abierto escrito en PHP y emparejado con una base de datos MySQL o MariaDB. Permite a los usuarios crear y gestionar sitios web de manera fácil y eficiente. WordPress es conocido por su flexibilidad y facilidad de uso, con miles de temas y plugins disponibles que permiten a los usuarios personalizar sus sitios web y añadir funcionalidades. Es ampliamente utilizado para blogs, sitios web de empresas, comercio electrónico y más.",
             "tags": ["development", "web", "wordpress"],
             "favorite": false,
-            "skill": 50,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 25,
@@ -279,8 +394,13 @@
             "description": "Docker es una plataforma de servicio que utiliza la virtualización a nivel de sistema operativo para entregar software en paquetes llamados contenedores. Los contenedores son aislados entre sí y agrupan sus propios software, bibliotecas y configuraciones de sistema; pueden comunicarse entre sí a través de canales bien definidos. Docker es conocido por su eficiencia, portabilidad y rapidez, lo que permite a los desarrolladores construir, probar y desplegar aplicaciones rápidamente.",
             "tags": ["development", "web", "docker"],
             "favorite": false,
-            "skill": 40,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1200px-Docker_%28container_engine%29_logo.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1200px-Docker_%28container_engine%29_logo.svg.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 26,
@@ -290,8 +410,13 @@
             "description": "Tailwind CSS es un marco de CSS de utilidad primero para la construcción rápida de interfaces de usuario personalizadas. En lugar de predefinir estilos de componentes, Tailwind proporciona clases de utilidad de bajo nivel que permiten construir diseños personalizados sin salir de tu HTML. Las clases de utilidad incluyen margen, relleno, tamaño de fuente, color, posición y más. Tailwind también es altamente personalizable, permitiendo a los desarrolladores adaptar el sistema a sus propias necesidades.",
             "tags": ["development", "web", "tailwind"],
             "favorite": false,
-            "skill": 40,
-            "image": "https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg"
+            "image": "https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 27,
@@ -301,8 +426,13 @@
             "description": "StencilJS es una herramienta para construir sistemas de diseño reutilizables y escalables. Es un compilador que genera componentes web estándar. Stencil combina las mejores ideas de los marcos de trabajo más populares en una herramienta de compilación sencilla. Los componentes Stencil son solo componentes web, por lo que funcionan en cualquier marco importante y pueden ser usados sin un marco porque son solo estándares web.",
             "tags": ["development", "web", "stencil"],
             "favorite": true,
-            "skill": 40,
-            "image": "https://stenciljs.com/stencil-og.png"
+            "image": "https://stenciljs.com/stencil-og.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 28,
@@ -312,8 +442,13 @@
             "description": "Storybook es una herramienta de código abierto para desarrollar componentes de interfaz de usuario en aislamiento para React, Vue, Angular y otros marcos. Proporciona un entorno de desarrollo de componentes donde los desarrolladores pueden explorar, probar y documentar componentes de manera interactiva. Storybook es conocido por su soporte para el desarrollo impulsado por historias, donde cada estado de un componente se representa como una historia individual.",
             "tags": ["development", "web", "storybook"],
             "favorite": true,
-            "skill": 40,
-            "image": "https://static-00.iconduck.com/assets.00/storybook-icon-2048x410-m440b17u.png"
+            "image": "https://static-00.iconduck.com/assets.00/storybook-icon-2048x410-m440b17u.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         },
         {
             "id": 29,
@@ -323,8 +458,13 @@
             "description": "NestJS es un marco de trabajo para construir aplicaciones de servidor eficientes y escalables en Node.js. Está construido con TypeScript y combina elementos de programación orientada a objetos, programación funcional y programación funcional reactiva. NestJS proporciona una arquitectura de aplicación out-of-the-box que permite a los desarrolladores crear aplicaciones altamente testables, escalables y fácilmente mantenibles.",
             "tags": ["development", "web", "nestjs"],
             "favorite": false,
-            "skill": 40,
-            "image": "https://cdn.icon-icons.com/icons2/2699/PNG/512/nestjs_logo_icon_169927.png"
+            "image": "https://cdn.icon-icons.com/icons2/2699/PNG/512/nestjs_logo_icon_169927.png",
+            "skill": 75,
+            "restSkill": 25,
+            "colorSkill": "--photoshop-primary, #31aaff",
+            "colorRestSkill": "--photoshop-secondary, #021733",
+            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
+            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
         }
     ]
 }

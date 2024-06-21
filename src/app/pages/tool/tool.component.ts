@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { switchMap } from 'rxjs';
@@ -22,14 +22,16 @@ export class ToolComponent implements OnInit {
   public textBtnBack: string = 'Volver a la lista de herramientas';
   public toolSkeleton = typeSkeleton.TOOL; 
   public showSkeleton: boolean = false;
-  public dataChartPhotoshop: DataChart;
+
+  @Input()
+  public dataChart: DataChart;
 
   constructor( 
     private _router: Router,
     private _toolById: PagesService, 
     private _activatedRoute: ActivatedRoute 
   ) { 
-    this.dataChartPhotoshop = {
+    this.dataChart = {
       skill: 75,
       restSkill: 25,
       colorSkill: '--photoshop-primary',
@@ -37,14 +39,20 @@ export class ToolComponent implements OnInit {
       colorHoverSkill: '--photoshop-secondary',
       colorHoverRestSkill: '--photoshop-secondary-hover'
     }
+
+    console.log(this.dataChart);
   }
 
   ngOnInit(): void {
-    setTimeout(() => this.showSkeleton = true, 3000);
+    setTimeout(() => this.showSkeleton = true, 2000);
+    this.routeActive();
+  }
+
+  routeActive() {
     this._activatedRoute.params.pipe(
-      switchMap(({ id }) => this._toolById.getToolById( id ))
-    ).subscribe( tool => {
-      if( !tool) return this._router.navigate(['/404']);
+      switchMap(({ id }) => this._toolById.getToolById(id))
+    ).subscribe(tool => {
+      if (!tool) return this._router.navigate(['/404']);
 
       this.tool = tool;
       this.showSkeleton = false;

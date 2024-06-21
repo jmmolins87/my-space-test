@@ -29,17 +29,20 @@ export class ToolsComponent implements OnInit {
   ) {
     setTimeout(() => {
       this.showSkeleton = true;
-    }, 3000);
+    }, 2000);
   }
 
   ngOnInit(): void {
-    this._toolsService.tools.subscribe(( tools: Tool[] ) => {
+    this._dbConnection.checkConnection()
+      .subscribe( isConnected => this.isConnected = isConnected );
+    this.importTools();
+  }
+
+  importTools() {
+    this._toolsService.tools.subscribe((tools: Tool[]) => {
       this.tools = tools;
       this.showSkeleton = false;
     });
-
-    this._dbConnection.checkConnection()
-      .subscribe( isConnected => this.isConnected = isConnected );
   }
 
 }

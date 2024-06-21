@@ -20,6 +20,10 @@ export class ChartComponent implements OnInit {
   public dataChart!: DataChart;
 
   ngOnInit() {
+    this.configDataChart();
+  }
+
+  configDataChart() {
     const documentStyle = getComputedStyle(document.documentElement);
     const textColor = documentStyle.getPropertyValue('--text-color');
 
@@ -27,19 +31,18 @@ export class ChartComponent implements OnInit {
       labels: ['Habiliadadess'],
       datasets: [
         {
-          data: [this.dataChart.skill, this.dataChart.restSkill ],
+          data: [this.dataChart.skill, this.dataChart.restSkill],
           backgroundColor: [
-            documentStyle.getPropertyValue(this.dataChart.colorSkill), 
+            documentStyle.getPropertyValue(this.dataChart.colorSkill),
             documentStyle.getPropertyValue(this.dataChart.colorRestSkill)
           ],
           hoverBackgroundColor: [
-            documentStyle.getPropertyValue(this.dataChart.colorHoverSkill), 
+            documentStyle.getPropertyValue(this.dataChart.colorHoverSkill),
             documentStyle.getPropertyValue(this.dataChart.colorHoverRestSkill)
           ]
         }
       ]
     };
-
 
     this.options = {
       cutout: '60%',

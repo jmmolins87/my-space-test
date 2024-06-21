@@ -13,7 +13,7 @@ import { typeSkeleton } from './skeleton.config';
 })
 export class SkeletonComponent implements OnInit {
 
-  public classSkeleton: string = '';
+  public classSkeleton!: string;
 
   @Input()
   public typeSkeleton!: typeSkeleton;
