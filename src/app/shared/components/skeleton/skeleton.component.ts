@@ -19,14 +19,18 @@ export class SkeletonComponent implements OnInit {
   public typeSkeleton!: typeSkeleton;
 
   ngOnInit(): void {
-      switch (this.typeSkeleton) {
-        case typeSkeleton.CARD_TOOL:
-          this.classSkeleton = 'card-tool';
-          break;
-        case typeSkeleton.TOOL:
-          this.classSkeleton = 'tool';
-          break;
-      }
+    this.changeTypeSkeleton();
+  }
+
+  changeTypeSkeleton() {
+    switch (this.typeSkeleton) {
+      case typeSkeleton.CARD_TOOL:
+        this.classSkeleton = 'card-tool';
+        break;
+      case typeSkeleton.TOOL:
+        this.classSkeleton = 'tool';
+        break;
+    }
   }
 
 }

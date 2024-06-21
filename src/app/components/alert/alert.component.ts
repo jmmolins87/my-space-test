@@ -23,7 +23,11 @@ export class AlertComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    switch ( this.statusAlert ) {
+    this.changeStatysAlert();
+  }
+
+  changeStatysAlert() {
+    switch (this.statusAlert) {
       case alertStatus.INFO:
         this.iconAlert = 'pi-info-circle';
         break;
