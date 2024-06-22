@@ -1,3 +1,5 @@
+@use './../../../styles.scss';
+
 .card {
     position: relative;
     .wrap-icon-favorite {
@@ -32,15 +34,11 @@
         list-style: none;
     }
 }
-.btn-go-site {
-    border: 1px solid var(--brand-color-red, #f53a3a);
-    background: transparent;
-    padding: 10px;
-    border-radius: 5px;
-    color: var(--brand-color-red, #f53a3a);
-    text-decoration: none;
-    transition: background .2s ease-in-out;
-    &:hover {
-        background: var(--brand-color-red-hover, #ff000022);
+::ng-deep {
+    .p-button.p-button-info.p-button-outlined {
+        @extend %p-button-info;
+    }
+    .p-button.p-button-danger.p-button-outlined {
+        @extend %p-button-danger;
     }
 }

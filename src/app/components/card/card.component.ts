@@ -15,6 +15,7 @@ export class CardComponent implements OnInit {
 
   @Input()
   public tool!: Tool;
+  public textGoBtn: string = 'Ir al sitio oficial';
 
   constructor() { }
 

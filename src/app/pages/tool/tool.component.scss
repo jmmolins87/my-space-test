@@ -89,15 +89,26 @@
             }
             .wrap-button-go {
                 order: 2;
+                width: 100%;
                 @media (min-width: 600px) {
                     margin-right: 14px;
                     order: 1;
+                    order: 2;
+                    width: fit-content;
+                }
+                .p-button.p-button-danger.p-button-outlined {
+                    @extend %p-button-danger;
                 }
             }
             .wrap-button-back {
                 order: 1;
+                width: 100%;
                 @media (min-width: 600px) {
                     order: 2;
+                    width: fit-content;
+                }
+                .p-button.p-button-info.p-button-outlined {
+                    @extend %p-button-info;
                 }
             }
         }

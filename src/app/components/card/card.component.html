@@ -18,7 +18,7 @@
             [routerLink]="['/tool', tool.id]"
             label="Leer más" 
             [outlined]="true" 
-            severity="success"
+            severity="info"
             icon="pi pi-plus" 
             iconPos="right" />
         <ul class="wrap-tags">
@@ -27,11 +27,8 @@
             </li>
         </ul>
         <ng-template pTemplate="footer">
-            <a 
-                [href]="tool.link" 
-                pRipple
-                target="_blank"
-                class="btn-go-site">Ir al sitio oficial
+            <a [href]="tool.link" target="_blank" rel="noopener noreferrer">
+                <p-button [label]="textGoBtn" [outlined]="true" severity="danger" />
             </a>
         </ng-template>
     </p-card>

@@ -6,11 +6,15 @@
     color: var(--brand-color-red, #f53a3a);
     text-decoration: none;
     transition: background .2s ease-in-out;
+    width: 100%;
     &:hover {
         background: var(--brand-color-red-hover, #ff000022);
     }
+    @media (min-width: 600px) {
+        width: fit-content;
+    }
 }
-%p-button-x {
+%p-button-info {
     border: 1px solid var(--brand-color-blue, #42d1f3);
     background: transparent;
     padding: 10px;
@@ -18,7 +22,11 @@
     color: var(--brand-color-blue, #42d1f3);
     text-decoration: none;
     transition: background .2s ease-in-out;
+    width: 100%;
     &:hover {
         background: var(--brand-color-blue-hover, #42d0f336);
-    }   
+    }
+    @media (min-width: 600px) {
+        width: fit-content;
+    }
 }
