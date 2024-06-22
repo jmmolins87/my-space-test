@@ -6,13 +6,14 @@
 
 .wrap-skeleton {
     &.tool {
-        height: 80vh;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         max-width: 100%;
         @media (min-width: 1200px) {
             max-width: 75%;
+            height: 80vh;
         }
         margin: 0 auto;
         .wrap-header {
@@ -38,6 +39,28 @@
                 margin-top: 50px;
                 @media (min-width: 600px) {
                     margin-top: 0;
+                }
+            }
+        }
+    }
+    .wrap-buttons  {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 600px) {
+            flex-direction: row;
+        }
+        ::ng-deep {
+            p-skeleton {
+                width: 15rem;
+            }
+            p-skeleton:nth-child(2) {
+                margin: 15px 0;
+                @media screen and (min-width: 600px) {
+                    margin: 0;
+                    margin-left: 16px;
                 }
             }
         }

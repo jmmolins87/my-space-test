@@ -20,6 +20,7 @@ export class ToolComponent implements OnInit {
 
   public tool!: Tool;
   public textBtnBack: string = 'Volver a la lista de herramientas';
+  public textGoBtn: string = 'Ir al sitio oficial';
   public toolSkeleton = typeSkeleton.TOOL; 
   public showSkeleton: boolean = false;
 

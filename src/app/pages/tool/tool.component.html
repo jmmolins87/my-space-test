@@ -33,11 +33,24 @@
             <p>{{ tool.description }}</p>
         </div>
     </div>
-    <div class="wrap-button-back">
-        <p-button 
-            (click)="goBack()"
-            [label]="textBtnBack" 
-            [outlined]="true" 
-            severity="danger" />
+    <div class="wrap-buttons">
+        <div class="wrap-button-go">
+            <a 
+                [href]="tool.link" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                <p-button 
+                    [label]="textGoBtn" 
+                    [outlined]="true" 
+                    severity="danger" />
+            </a>
+        </div>
+        <div class="wrap-button-back">
+            <p-button 
+                (click)="goBack()"
+                [label]="textBtnBack" 
+                [outlined]="true" 
+                severity="info" />
+        </div>
     </div>
 </div>

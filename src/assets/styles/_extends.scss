@@ -1,0 +1,24 @@
+%p-button-danger {
+    border: 1px solid var(--brand-color-red, #f53a3a);
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--brand-color-red, #f53a3a);
+    text-decoration: none;
+    transition: background .2s ease-in-out;
+    &:hover {
+        background: var(--brand-color-red-hover, #ff000022);
+    }
+}
+%p-button-x {
+    border: 1px solid var(--brand-color-blue, #42d1f3);
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--brand-color-blue, #42d1f3);
+    text-decoration: none;
+    transition: background .2s ease-in-out;
+    &:hover {
+        background: var(--brand-color-blue-hover, #42d0f336);
+    }   
+}

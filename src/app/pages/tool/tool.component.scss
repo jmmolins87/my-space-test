@@ -1,3 +1,5 @@
+@use './../../../styles.scss';
+
 ::ng-deep {
     app-tool {
         width: initial;
@@ -71,26 +73,31 @@
                 line-height: 1.5;
             }
         }
-        .wrap-button-back {
+        .wrap-buttons {
             display: flex;
             box-sizing: border-box;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
-            margin-top: 15px;
+            gap: 16px;
             @media (min-width: 600px) {
                 justify-content: flex-end;
+                flex-direction: row;
+                width: fit-content;
+                gap: 0;
             }
-            .p-button-danger {
-                border: 1px solid var(--brand-color-red, #f53a3a);
-                background: transparent;
-                padding: 10px;
-                border-radius: 5px;
-                color: var(--brand-color-red, #f53a3a);
-                text-decoration: none;
-                transition: background .2s ease-in-out;
-                &:hover {
-                    background: var(--brand-color-red-hover, #ff000022);
+            .wrap-button-go {
+                order: 2;
+                @media (min-width: 600px) {
+                    margin-right: 14px;
+                    order: 1;
+                }
+            }
+            .wrap-button-back {
+                order: 1;
+                @media (min-width: 600px) {
+                    order: 2;
                 }
             }
         }

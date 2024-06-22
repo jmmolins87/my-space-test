@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import './assets/styles/extends';
 
 // ** PrimeNg Config Styles
 @import "primeng/resources/themes/bootstrap4-dark-purple/theme.css";
@@ -11,7 +12,9 @@
 
     // * Brand 
     --brand-color-red: #f53a3a;
+    --brand-color-red-hover: #ff000022
     --brand-color-blue: #42d1f3;
+    --brand-color-blue-hover: #42d0f336;
     
     // * Colros
     --bg-navbar: #343e4d33;
@@ -129,6 +132,11 @@ p, span, a {
 .mt-2 { margin-top: 15px !important; }
 .mt-3 { margin-top: 20px !important; }
 .mt-4 { margin-top: 25px !important; }
+
+.me-1 { margin-right: 10px !important; }
+.me-2 { margin-right: 15px !important; }
+.me-4 { margin-right: 25px !important; }
+.me-3 { margin-right: 20px !important; }
 
 // * ScrollTop
 .p-scrolltop.p-link {
