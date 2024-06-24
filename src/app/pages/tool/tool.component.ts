@@ -8,7 +8,6 @@ import { PagesService } from '../../services/pages-services.service';
 import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
 
 import { Tool } from '../../interfaces/tool.interface';
-import { DataChart } from './../../interfaces/data-chart.interface';
 
 
 @Component({
@@ -23,10 +22,8 @@ export class ToolComponent implements OnInit {
   public textGoBtn: string = 'Ir al sitio oficial';
   public toolSkeleton = typeSkeleton.TOOL; 
   public showSkeleton: boolean = false;
-  public dataChart: DataChart[] = [];
 
   constructor( 
-    private _dataChart: PagesService,
     private _router: Router,
     private _toolById: PagesService, 
     private _activatedRoute: ActivatedRoute 
@@ -35,7 +32,6 @@ export class ToolComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => this.showSkeleton = true, 2000);
     this.routeActive();
-    this.getTools();
   }
 
   routeActive() {
@@ -47,12 +43,6 @@ export class ToolComponent implements OnInit {
       this.tool = tool;
       this.showSkeleton = false;
       return;
-    })
-  }
-
-  getTools() {
-    this._dataChart.tools.subscribe((dataChart: DataChart[]) => {
-      console.log(dataChart);
     })
   }
 

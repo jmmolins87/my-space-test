@@ -11,12 +11,8 @@
             "favorite": true,
             "restskill": 75,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 60,
+            "restSkill": 40
         },
         {
             "id": 2,
@@ -28,11 +24,7 @@
             "favorite": false,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png",
             "skill": 55,
-            "restSkill": 45,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "restSkill": 45
         },
         {
             "id": 3,
@@ -43,12 +35,8 @@
             "tags": ["Autoedición", "Diseño de páginas", "Tipografía", "Diseño gráfico", "Edición", "Diseño de impresión", "Edición digital", "Documentos interactivos"],
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 65,
+            "restSkill": 35
         },
         {
             "id": 4,
@@ -59,12 +47,8 @@
             "tags": ["Diseño UI", "Diseño UX", "Prototipos", "Wireframing", "Colaboración", "Diseño responsivo"],
             "favorite": true,
             "image": "https://cdn.worldvectorlogo.com/logos/adobe-xd-2.svg",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 80,
+            "restSkill": 20
         },
         {
             "id": 5,
@@ -76,11 +60,7 @@
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1365px-Figma-logo.svg.png",
             "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "restSkill": 25
         },
         {
             "id": 6,
@@ -91,12 +71,8 @@
             "tags": ["Edición de código", "Resaltado de sintaxis", "Autocompletado", "Fragmentos de código", "Edición con varios cursores", "Navegación de código", "IntelliSense", "Refactorización de código"],
             "favorite": true,
             "image": "https://seeklogo.com/images/V/visual-studio-code-logo-449D71944F-seeklogo.com.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 90,
+            "restSkill": 10
         },
         {
             "id": 7,
@@ -107,12 +83,8 @@
             "tags": ["Productividad", "Gestión de proyectos", "Base de datos", "Gestión del conocimiento", "Colaboración", "Toma de notas", "Gestión de tareas"],
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 90,
+            "restSkill": 10
         },
         {
             "id": 8,
@@ -123,12 +95,8 @@
             "tags": ["Organización", "Notas", "Por hacer", "En proceso", "Completado", "En espera", "Bloqueado", "Revisión requerida"],
             "favorite": false,
             "image": "https://cdn.worldvectorlogo.com/logos/trello-logo.svg",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 85,
+            "restSkill": 15
         },
         {
             "id": 9,
@@ -139,12 +107,8 @@
             "tags": ["Organización", "Notas", "Prioridad y gravedad", "Tipo de trabajo", "Estado y flujo de trabajo", "Componentes y módulos", "Lanzamiento y versiones", "Equipos y roles", "Proyectos y clientes", "Tiempo y programación", "Etiquetas técnicas", "Varios"],
             "favorite": true,
             "image": "https://cdn.worldvectorlogo.com/logos/jira-3.svg",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 70,
+            "restSkill": 30
         },
         {
             "id": 10,
@@ -155,12 +119,8 @@
             "tags": ["development", "web", "html"],
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 90,
+            "restSkill": 10
         },
         {
             "id": 11,
@@ -171,12 +131,8 @@
             "tags": ["development", "web", "css"],
             "favorite": true,
             "image": "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 90,
+            "restSkill": 10
         },
         {
             "id": 12,
@@ -188,11 +144,7 @@
             "favorite": true,
             "image": "https://cdn.freebiesupply.com/logos/large/2x/sass-1-logo-png-transparent.png",
             "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "restSkill": 25
         },
         {
             "id": 13,
@@ -203,12 +155,8 @@
             "tags": ["development", "web", "javascript"],
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/1200px-JavaScript-logo.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 55,
+            "restSkill": 45
         },
         {
             "id": 14,
@@ -219,12 +167,8 @@
             "tags": ["development", "web", "angular"],
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 70,
+            "restSkill": 30
         },
         {
             "id": 15,
@@ -235,12 +179,8 @@
             "tags": ["development", "web", "react"],
             "favorite": false,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 40,
+            "restSkill": 60
         },
         {
             "id": 16,
@@ -251,12 +191,8 @@
             "tags": ["development", "web", "github"],
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 80,
+            "restSkill": 20
         },
         {
             "id": 17,
@@ -267,12 +203,8 @@
             "tags": ["development", "web", "node"],
             "favorite": false,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 30,
+            "restSkill": 70
         },
         {
             "id": 18,
@@ -283,12 +215,8 @@
             "tags": ["development", "web", "postman"],
             "favorite": false,
             "image": "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 30,
+            "restSkill": 70
         },
         {
             "id": 19,
@@ -299,12 +227,8 @@
             "tags": ["development", "web", "git"],
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 85,
+            "restSkill": 15
         },
         {
             "id": 20,
@@ -316,11 +240,7 @@
             "favorite": true,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
             "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "restSkill": 25
         },
         {
             "id": 21,
@@ -331,12 +251,8 @@
             "tags": ["development", "web", "angular", "material"],
             "favorite": false,
             "image": "https://cdn.jsdelivr.net/gh/angular-material-extensions/pages@master/assets/angular-material-extensions-logo.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 65,
+            "restSkill": 35
         },
         {
             "id": 22,
@@ -347,12 +263,8 @@
             "tags": ["development", "web", "angular", "primeng"],
             "favorite": true,
             "image": "https://soka.gitlab.io/angular/ui/primeng/01-primeng-intro/img/primeng-2.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 85,
+            "restSkill": 15
         },
         {
             "id": 23,
@@ -363,12 +275,8 @@
             "tags": ["development", "web", "mongodb"],
             "favorite": false,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 55,
+            "restSkill": 45
         },
         {
             "id": 24,
@@ -380,11 +288,7 @@
             "favorite": false,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png",
             "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "restSkill": 25
         },
         {
             "id": 25,
@@ -395,12 +299,8 @@
             "tags": ["development", "web", "docker"],
             "favorite": false,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1200px-Docker_%28container_engine%29_logo.svg.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 25,
+            "restSkill": 75
         },
         {
             "id": 26,
@@ -412,11 +312,7 @@
             "favorite": false,
             "image": "https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg",
             "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "restSkill": 25
         },
         {
             "id": 27,
@@ -427,12 +323,8 @@
             "tags": ["development", "web", "stencil"],
             "favorite": true,
             "image": "https://stenciljs.com/stencil-og.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 65,
+            "restSkill": 45
         },
         {
             "id": 28,
@@ -444,11 +336,7 @@
             "favorite": true,
             "image": "https://static-00.iconduck.com/assets.00/storybook-icon-2048x410-m440b17u.png",
             "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "restSkill": 25
         },
         {
             "id": 29,
@@ -459,12 +347,8 @@
             "tags": ["development", "web", "nestjs"],
             "favorite": false,
             "image": "https://cdn.icon-icons.com/icons2/2699/PNG/512/nestjs_logo_icon_169927.png",
-            "skill": 75,
-            "restSkill": 25,
-            "colorSkill": "--photoshop-primary, #31aaff",
-            "colorRestSkill": "--photoshop-secondary, #021733",
-            "colorHoverSkill": "--photoshop-hover-primary, #0392f8",
-            "colorHoverRestSkill": "--photoshop-hover-secondary, #010811"
+            "skill": 25,
+            "restSkill": 75
         }
     ]
 }

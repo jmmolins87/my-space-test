@@ -14,12 +14,7 @@ import { LogoDispData } from '../../interfaces/logoDisplayData.interface';
 export class LogoDisplayComponent implements OnInit {
 
   @Input() 
-  public data: LogoDispData = {
-    src: '',
-    alt: '',
-    title: '',
-    height: 0
-  };
+  public data!: LogoDispData;
 
   constructor( ) {}
 
