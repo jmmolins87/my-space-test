@@ -13,7 +13,6 @@
         max-width: 100%;
         @media (min-width: 1200px) {
             max-width: 75%;
-            height: 80vh;
         }
         margin: 0 auto;
         .wrap-header {
@@ -52,7 +51,6 @@
         width: 100%;
         @media screen and (min-width: 600px) {
             flex-direction: row;
-            width: 15rem;
         }
         ::ng-deep {
             p-skeleton {

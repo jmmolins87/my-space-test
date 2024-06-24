@@ -23,30 +23,19 @@ export class ToolComponent implements OnInit {
   public textGoBtn: string = 'Ir al sitio oficial';
   public toolSkeleton = typeSkeleton.TOOL; 
   public showSkeleton: boolean = false;
-
-  @Input()
-  public dataChart: DataChart;
+  public dataChart: DataChart[] = [];
 
   constructor( 
+    private _dataChart: PagesService,
     private _router: Router,
     private _toolById: PagesService, 
     private _activatedRoute: ActivatedRoute 
-  ) { 
-    this.dataChart = {
-      skill: 75,
-      restSkill: 25,
-      colorSkill: '--photoshop-primary',
-      colorRestSkill: '--photoshop-primary-hover',
-      colorHoverSkill: '--photoshop-secondary',
-      colorHoverRestSkill: '--photoshop-secondary-hover'
-    }
-
-    console.log(this.dataChart);
-  }
+  ) { }
 
   ngOnInit(): void {
     setTimeout(() => this.showSkeleton = true, 2000);
     this.routeActive();
+    this.getTools();
   }
 
   routeActive() {
@@ -58,6 +47,12 @@ export class ToolComponent implements OnInit {
       this.tool = tool;
       this.showSkeleton = false;
       return;
+    })
+  }
+
+  getTools() {
+    this._dataChart.tools.subscribe((dataChart: DataChart[]) => {
+      console.log(dataChart);
     })
   }
 
