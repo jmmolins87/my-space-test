@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { ComponentsModule } from '../components/components.module';
 import { PagesRoutingModule } from './pages-routing.module';
@@ -13,7 +14,6 @@ import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { ToolComponent } from './tool/tool.component';
 import { ToolsComponent } from './tools/tools.component';
-import { FormsModule } from '@angular/forms';
 
 
 @NgModule({

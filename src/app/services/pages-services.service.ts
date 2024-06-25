@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { Observable, of } from 'rxjs';
-import { catchError } from 'rxjs/operators';
 
 import { environments } from '../../environments/environments.prod';
 
@@ -28,16 +27,6 @@ export class PagesService {
 
   getToolById( id: string ): Observable<Tool | undefined> {
     return this._http.get<Tool | undefined>( `${ this.baseUrl }/tools/${ id }`)
-  }
-
-  checkConnection(): Observable<boolean> {
-    return this._http.get<boolean>(`${this.baseUrl}`)
-      .pipe(
-        catchError(err => {
-          console.log('Error en el servidor', err);
-          return of(false);
-        })
-      )
   }
 
 }

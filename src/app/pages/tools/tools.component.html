@@ -1,9 +1,4 @@
-<app-alert 
-    *ngIf="isConnected"
-    [textAlert]="textAlert" 
-    [statusAlert]="alertStatus"
-    [showIcon]="true" />
-<div *ngIf="!isConnected" class="wrap-cards">
+<div class="wrap-cards">
     <div *ngFor="let tool of tools" class="wrap-card">
         <app-skeleton 
             *ngIf="!showSkeleton" 

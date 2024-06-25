@@ -1,5 +1,5 @@
 export interface LogoDispData {
-    src: any;
+    src: string;
     alt: string;
     title: string;
     height: number;

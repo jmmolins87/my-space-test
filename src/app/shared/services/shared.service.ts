@@ -11,8 +11,7 @@ import { countriesLanguage } from '../db/countriesLanguage.db';
 })
 export class SharedService {
 
-  private logoJson: string = 'assets/img/logo-blue.json';
-  public flagJson: string = 'assets/img/flags.json';
+  private logoJson: string = 'assets/img/logo.json';
 
   constructor( private _http: HttpClient ) { }
 

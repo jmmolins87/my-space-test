@@ -23,18 +23,13 @@ export class ToolsComponent implements OnInit {
   public showSkeleton: boolean = false;
   public cardToolSkeleton = typeSkeleton.CARD_TOOL;
 
-  constructor( 
-    private _toolsService: PagesService, 
-    private _dbConnection: PagesService 
-  ) {
+  constructor( private _toolsService: PagesService ) {
     setTimeout(() => {
       this.showSkeleton = true;
     }, 2000);
   }
 
   ngOnInit(): void {
-    this._dbConnection.checkConnection()
-      .subscribe( isConnected => this.isConnected = isConnected );
     this.importTools();
   }
 
