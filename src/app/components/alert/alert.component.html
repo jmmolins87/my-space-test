@@ -1,4 +1,8 @@
 <div [ngClass]="statusAlert" class="alert">
-    <i *ngIf="showIcon" [ngClass]="iconAlert" class="pi"></i>
+    <i 
+        *ngIf="showIcon" 
+        [ngClass]="iconAlert" 
+        class="pi">
+    </i>
     <span>{{ textAlert }}</span>
 </div>

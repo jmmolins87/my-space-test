@@ -13,6 +13,7 @@ import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { ToolComponent } from './tool/tool.component';
 import { ToolsComponent } from './tools/tools.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ToolsComponent } from './tools/tools.component';
     CommonModule,
     ComponentsModule,
     HttpClientModule,
+    FormsModule,
     PagesRoutingModule,
     PrimeNgModule,
     SharedModule

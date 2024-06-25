@@ -8,6 +8,7 @@ import { MenubarModule } from 'primeng/menubar';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { SkeletonModule } from 'primeng/skeleton';
 import { TagModule } from 'primeng/tag';
+import { ToastModule } from 'primeng/toast';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { TagModule } from 'primeng/tag';
     ScrollTopModule,
     SkeletonModule,
     TagModule,
+    ToastModule
   ]
 })
 export class PrimeNgModule { }

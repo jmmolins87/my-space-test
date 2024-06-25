@@ -3,14 +3,14 @@
     [textAlert]="textAlert" 
     [statusAlert]="alertStatus"
     [showIcon]="true" />
-<div class="wrap-cards">
+<div *ngIf="!isConnected" class="wrap-cards">
     <div *ngFor="let tool of tools" class="wrap-card">
-        <app-card 
-            *ngIf="showSkeleton" 
-            [tool]="tool" />
         <app-skeleton 
             *ngIf="!showSkeleton" 
             [typeSkeleton]="cardToolSkeleton" />
+        <app-card 
+            *ngIf="showSkeleton" 
+            [tool]="tool" />
     </div>
     <p-scrollTop></p-scrollTop>
 </div>

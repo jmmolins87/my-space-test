@@ -17,7 +17,7 @@ import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
 export class ToolsComponent implements OnInit {
 
   public tools: Tool[] = [];
-  public textAlert: string = 'No se puedo conectar a la base de datos';
+  public textAlert: string = 'No se pudo conectar a la base de datos';
   public alertStatus: alertStatus = alertStatus.DANGER;
   public isConnected!: boolean;
   public showSkeleton: boolean = false;

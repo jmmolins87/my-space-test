@@ -13,7 +13,7 @@ import { Tool } from '../interfaces/tool.interface';
 })
 export class PagesService {
 
-  private errorJson: string = '';
+  private errorJson!: string;
   private baseUrl: string = environments.baseUrl;
 
   constructor( private _http: HttpClient ) { }
@@ -31,7 +31,7 @@ export class PagesService {
   }
 
   checkConnection(): Observable<boolean> {
-    return this._http.get<boolean>(this.baseUrl)
+    return this._http.get<boolean>(`${this.baseUrl}`)
       .pipe(
         catchError(err => {
           console.log('Error en el servidor', err);

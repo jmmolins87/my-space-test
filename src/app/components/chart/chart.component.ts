@@ -34,11 +34,11 @@ export class ChartComponent implements OnInit {
           data: [this.dataChart.skill, this.dataChart.restSkill],
           backgroundColor: [
             documentStyle.getPropertyValue('--brand-color-blue'),
-            documentStyle.getPropertyValue('--brand-color-red')
+            documentStyle.getPropertyValue('--brand-color-blue-hover')
           ],
           hoverBackgroundColor: [
-            documentStyle.getPropertyValue('--brand-color-blue-hover'),
-            documentStyle.getPropertyValue('--brand-color-red-hover')
+            documentStyle.getPropertyValue('--brand-color-blue'),
+            documentStyle.getPropertyValue('--brand-color-blue-hover')
           ]
         }
       ]
