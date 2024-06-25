@@ -1,6 +1,8 @@
 <app-skeleton *ngIf="!showSkeleton" [typeSkeleton]="toolSkeleton" />
 
 <div *ngIf="showSkeleton" class="wrap-tool">
+
+<div class="card">
     <div class="wrapper-tool">
         <div class="wrap-title">
             <h1 class="tool-title">{{ tool.title }}</h1>
