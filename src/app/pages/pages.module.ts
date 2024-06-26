@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ComponentsModule } from '../components/components.module';
 import { PagesRoutingModule } from './pages-routing.module';
@@ -29,9 +29,9 @@ import { ToolsComponent } from './tools/tools.component';
     CommonModule,
     ComponentsModule,
     HttpClientModule,
-    FormsModule,
     PagesRoutingModule,
     PrimeNgModule,
+    ReactiveFormsModule,
     SharedModule
   ]
 })
