@@ -21,6 +21,9 @@
             max-width: 75%;
             height: 100vh;
         }
+        @media screen and (min-width: 1200px) {
+            height: 75vh;
+        }
         .wrap-header {
             display: flex;
             flex-direction: column;

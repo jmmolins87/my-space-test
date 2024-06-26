@@ -19,6 +19,9 @@
             max-width: 75%;
             height: 100vh;
         }
+        @media screen and (min-width: 1200px) {
+            height: 75vh;
+        }
         .wrapper-tool {
             .wrap-title {
                 position: relative;

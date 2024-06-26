@@ -10,9 +10,6 @@
     &:hover {
         background: var(--brand-color-red-hover, #ff000022);
     }
-    @media (min-width: 600px) {
-        width: fit-content;
-    }
 }
 %p-button-info {
     border: 1px solid var(--brand-color-blue, #42d1f3);
@@ -25,8 +22,5 @@
     width: 100%;
     &:hover {
         background: var(--brand-color-blue-hover, #42d0f336);
-    }
-    @media (min-width: 600px) {
-        width: fit-content;
     }
 }
