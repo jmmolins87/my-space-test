@@ -6,15 +6,17 @@
 
 .wrap-skeleton {
     &.tool {
-        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         max-width: 100%;
-        @media (min-width: 1200px) {
+        margin: 0 auto;
+        @media screen and (min-width: 600px) {
+            height: 100vh;
+        }
+        @media screen and (min-width: 992px) {
             max-width: 75%;
         }
-        margin: 0 auto;
         .wrap-header {
             display: flex;
             flex-direction: column;
@@ -54,7 +56,7 @@
         }
         ::ng-deep {
             p-skeleton {
-                width: 15rem;
+                width: 100%;
             }
             p-skeleton:nth-child(2) {
                 margin: 15px 0;
