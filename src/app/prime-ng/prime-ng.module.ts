@@ -4,6 +4,8 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { ChartModule } from 'primeng/chart';
 import { DropdownModule } from 'primeng/dropdown';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 import { MenubarModule } from 'primeng/menubar';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { SkeletonModule } from 'primeng/skeleton';
@@ -17,11 +19,13 @@ import { ToastModule } from 'primeng/toast';
     CardModule,
     ChartModule,
     DropdownModule,
+    InputTextModule,
+    InputTextareaModule,
     MenubarModule,
     ScrollTopModule,
     SkeletonModule,
     TagModule,
-    ToastModule
+    ToastModule,
   ]
 })
 export class PrimeNgModule { }
