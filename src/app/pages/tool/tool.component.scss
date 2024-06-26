@@ -10,18 +10,8 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
-        max-width: 100%;
-        margin: 0 auto;
-        @media screen and (min-width: 600px) {
-            height: 100vh;
-        }
-        @media screen and (min-width: 992px) {
-            max-width: 75%;
-            height: 100vh;
-        }
-        @media screen and (min-width: 1200px) {
-            height: 75vh;
-        }
+        max-width: 75%;
+        margin: 50px auto;
         .wrapper-tool {
             .wrap-title {
                 position: relative;
