@@ -5,6 +5,9 @@
 }
 
 .wrap-skeleton {
+    &.card-tool {
+        margin-bottom: 20px;
+    }
     &.tool {
         display: flex;
         align-items: center;
