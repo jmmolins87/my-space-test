@@ -1,51 +1,43 @@
-<div class="container">
-    <h1>Contacto</h1>
-    <form class="wrap-form">
-        <div class="wrapper-form">
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input pInputText id="username" />
-                    <label htmlFor="username">Nombre</label>
-                </span>
-            </div>
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input pInputText id="surname" />
-                    <label htmlFor="surname">Apellidos</label>
-                </span>
-            </div>
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input pInputText id="company" />
-                    <label htmlFor="company">Empresa</label>
-                </span>
-            </div>
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input pInputText id="e-mail" />
-                    <label htmlFor="e-mail">Correo electrónico</label>
-                </span>
-            </div>
-            <div class="form-group">
-                <span class="p-float-label">
-                    <textarea id="textarea" rows="5" cols="30" pInputTextarea></textarea>
-                    <label for="textarea">Escriba aquí su comentario</label>
-                </span>
-            </div>
+<h1>Contacto</h1>
+<form class="wrap-form">
+    <div class="wrapper-form">
+        <div class="form-group">
+            <span class="p-float-label">
+                <input pInputText id="username" />
+                <label htmlFor="username">Nombre</label>
+            </span>
         </div>
-        <div class="wrap-buttons">
-            <div class="wrap-button-reset">
-                <p-button 
-                    label="Reset" 
-                    [outlined]="true" 
-                    severity="danger" />
-            </div>
-            <div class="wrap-button-send">
-                <p-button 
-                    label="Enviar" 
-                    [outlined]="true" 
-                    severity="info" />
-            </div>
+        <div class="form-group">
+            <span class="p-float-label">
+                <input pInputText id="surname" />
+                <label htmlFor="surname">Apellidos</label>
+            </span>
         </div>
-    </form>
-</div>
+        <div class="form-group">
+            <span class="p-float-label">
+                <input pInputText id="company" />
+                <label htmlFor="company">Empresa</label>
+            </span>
+        </div>
+        <div class="form-group">
+            <span class="p-float-label">
+                <input pInputText id="e-mail" />
+                <label htmlFor="e-mail">Correo electrónico</label>
+            </span>
+        </div>
+        <div class="form-group">
+            <span class="p-float-label">
+                <textarea id="textarea" rows="5" cols="50" pInputTextarea></textarea>
+                <label for="textarea">Escriba aquí su comentario</label>
+            </span>
+        </div>
+    </div>
+    <div class="wrap-buttons">
+        <div class="wrap-button-reset">
+            <p-button label="Reset" [outlined]="true" severity="danger" />
+        </div>
+        <div class="wrap-button-send">
+            <p-button label="Enviar" [outlined]="true" severity="info" />
+        </div>
+    </div>
+</form>
