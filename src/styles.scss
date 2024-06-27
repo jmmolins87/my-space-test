@@ -68,22 +68,26 @@ body {
     font-style: normal;
 }
 h1 {
-    font-size: var(--font-size-title-h1, 28px);
+    font-size: var(--font-size-title-h1-mobile, 22px);
     color: var(--brand-color-blue);
     border-bottom: 1px solid var(--brand-color-blue);
     margin-top: 30px;
     @media (min-width: 768px) {
         margin-top: 50px;
+        font-size: var(--font-size-title-h1, 28px);
     }
 }
 h2 {
-    font-size: var(--font-size-title-h2-mobile, 16px);
+    font-size: var(--font-size-title-h2-mobile, 20px);
     @media (min-width: 768px) {
-        font-size: var(--font-size-title-h2, 22px);
+        font-size: var(--font-size-title-h2, 24px);
     }
 }
 h3 {
-    font-size: var(--font-size-title-h3, 18px);
+    font-size: var(--font-size-title-h3-mobile, 18px);
+    @media (min-width: 768px) {
+        font-size: var(--font-size-title-h3, 22px);
+    }
 }
 p, span, a {
     font-size: var(--font-size-text, 16px);

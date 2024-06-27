@@ -4,7 +4,7 @@
 
 <div *ngIf="showSkeleton" class="wrap-contact">
     <h1>Contacto</h1>
-    <p>Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e intentaré responderle con la mayor brevedad prosible:</p>
+    <h3 class="description">* Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e intentaré responderle con la mayor brevedad prosible:</h3>
     <form 
         [formGroup]="formContact" 
         (ngSubmit)="onSubmit()"  
@@ -160,11 +160,15 @@
                         rows="5" 
                         cols="30" 
                         pInputTextarea
-                        [ngClass]="{ 'success': message?.valid }"></textarea>
+                        [(ngModel)]="messageCharactres" 
+                        (input)="updateCounter()"
+                        [ngClass]="{ 'success': message?.valid }">
+                    </textarea>
                     <label for="textarea">
                         Escriba aquí su comentario
                         <span class="required">*</span>
                     </label>
+                    <p class="counterCharacters">Número de carácteres: {{ characterCount }}</p>
                 </span>
                 <div 
                     *ngIf="formContact.controls['message']?.invalid && (formContact.controls['message']?.dirty || formContact.controls['message']?.touched)" 
@@ -181,13 +185,19 @@
                             [statusAlert]="alertStatus.DANGER"
                             [showIcon]="true" />
                     </div>
+                    <div *ngIf="message?.errors?.['maxlength']">
+                        <app-alert 
+                            [textAlert]="'El mensaje debe tener un máximo de 1000 carácteres'"
+                            [statusAlert]="alertStatus.DANGER"
+                            [showIcon]="true" />
+                    </div>
                 </div>
             </div>
         </div>
         <div class="wrap-buttons">
             <div class="wrap-button-reset">
                 <p-button 
-                    (click)="resetFormError()"
+                    (click)="resetForm()"
                     label="Resetear formulario" 
                     [outlined]="true" 
                     severity="danger" />

@@ -1,6 +1,15 @@
 @use './../../../styles.scss';
 
 .wrap-contact {
+    .description {
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            max-width: 50%;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 33%;
+        }
+    }
     .wrap-form {
         display: flex;
         box-sizing: border-box;
@@ -43,6 +52,9 @@
                     width: 100%;
                     .required {
                         color: var(--brand-color-red, #f53a3a);
+                    }
+                    .counterCharacters {
+                        margin-top: 0;
                     }
                     &.success {
                         border-radius: 4px;

@@ -20,7 +20,13 @@ export class ContactComponent {
 
   public showSkeleton: boolean = false;
   public contactSkeleton = typeSkeleton.CONTACT;
+
   public alertStatus = alertStatus;
+
+  public messageCharactres: string = '';
+  public characterCount: number = 0;
+  public maxCharacters: number = 1000;
+
   public formContact: FormGroup = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
     surname: [''],
@@ -28,7 +34,7 @@ export class ContactComponent {
     email: ['', [Validators.required, Validators.email]],
     phone: [''],
     subject: ['', [Validators.required, Validators.minLength(3)]],
-    message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(200)]]
+    message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(this.maxCharacters)]]
   });
   
   constructor ( 
@@ -82,12 +88,24 @@ export class ContactComponent {
     this.showErrorToast();
   }
 
+  resetForm() {
+    this.showInfoToast();
+  }
+
   showSuccessToast() {
     this.messageService.add({ severity: 'success', summary: '¡¡Genial!!', detail: 'Su mensaje se envió correctamente' });
   }
 
   showErrorToast() {
     this.messageService.add({ severity: 'error', summary: '¡¡Ups!!', detail: 'Ha habido un error al enviar el correo' });
+  }
+
+  showInfoToast() {
+    this.messageService.add({ severity: 'info', summary: '¡¡Ojo!! Ha reseteado el correo', detail: '¡¡Volvamos a empezar!!' });
+  }
+
+  updateCounter() {
+    this.characterCount = this.messageCharactres.length;
   }
 
 }
