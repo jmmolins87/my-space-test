@@ -159,11 +159,11 @@ p, span, a {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--brand-color-red-hover); 
+    box-shadow: inset 0 0 5px var(--brand-color-red); 
     border-radius: 5px;
 }  
 ::-moz-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--brand-color-red-hover); 
+    box-shadow: inset 0 0 5px var(--brand-color-red); 
     border-radius: 5px;
 }  
 /* Handle */

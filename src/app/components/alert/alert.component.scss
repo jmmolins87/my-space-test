@@ -12,11 +12,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
     text-align: center;
-    max-width: fit-content;
-    margin-top: 15px;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    margin-top: 5px;
     &.info {
         color: var(--alert-info, #42d1f3);
         border: 2px solid var(--alert-info, #42d1f3);

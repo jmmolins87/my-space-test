@@ -30,6 +30,9 @@ export class SkeletonComponent implements OnInit {
       case typeSkeleton.TOOL:
         this.classSkeleton = 'tool';
         break;
+      case typeSkeleton.CONTACT:
+        this.classSkeleton = 'contact';
+        break;
     }
   }
 
