@@ -4,6 +4,7 @@ import {
   FormGroup, 
   Validators 
 } from '@angular/forms';
+import { MessageService } from 'primeng/api';
 
 import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
 import { alertStatus } from './../../components/alert/alert.config';
@@ -12,30 +13,39 @@ import { alertStatus } from './../../components/alert/alert.config';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  providers: [MessageService]
 })
 export class ContactComponent {
 
-  public description: string = 'Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e intentaré responderle con la mayor brevedad prosible:';
   public showSkeleton: boolean = false;
   public contactSkeleton = typeSkeleton.CONTACT;
   public alertStatus = alertStatus;
   public formContact: FormGroup = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
+    surname: [''],
     company: ['', [Validators.required, Validators.minLength(3)]],
     email: ['', [Validators.required, Validators.email]],
+    phone: [''],
     subject: ['', [Validators.required, Validators.minLength(3)]],
     message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(200)]]
   });
   
-  constructor( private fb: FormBuilder ) {
+  constructor ( 
+    private fb: FormBuilder, 
+    private messageService: MessageService ) {
     setTimeout(() => {
       this.showSkeleton = true;
     }, 2000);
   }
 
+  // Los gets sirven para poder acceder a los campos del formulario de una forma más sencilla y rápida.
   get name() {
     return this.formContact.get('name');
+  }
+
+  get surname() {
+    return this.formContact.get('surname');
   }
 
   get company() {
@@ -44,6 +54,10 @@ export class ContactComponent {
 
   get email() {
     return this.formContact.get('email');
+  }
+
+  get phone() {
+    return this.formContact.get('phone');
   }
 
   get subject() {
@@ -56,10 +70,24 @@ export class ContactComponent {
 
   onSubmit() {
     if (this.formContact.valid) {
-      console.log('Form Submitted!', this.formContact.value);
+      this.showSuccessToast();
+      this.formContact.reset();
     } else {
-      console.log('Form not valid');
+      this.resetFormError();
     }
+  }
+
+  resetFormError() {
+    this.formContact.reset();
+    this.showErrorToast();
+  }
+
+  showSuccessToast() {
+    this.messageService.add({ severity: 'success', summary: '¡¡Genial!!', detail: 'Su mensaje se envió correctamente' });
+  }
+
+  showErrorToast() {
+    this.messageService.add({ severity: 'error', summary: '¡¡Ups!!', detail: 'Ha habido un error al enviar el correo' });
   }
 
 }

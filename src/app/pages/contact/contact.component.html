@@ -4,15 +4,21 @@
 
 <div *ngIf="showSkeleton" class="wrap-contact">
     <h1>Contacto</h1>
-    <p>{{ description }}</p>
-    <form [formGroup]="formContact" class="wrap-form">
+    <p>Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e intentaré responderle con la mayor brevedad prosible:</p>
+    <form 
+        [formGroup]="formContact" 
+        (ngSubmit)="onSubmit()"  
+        autocomplete="off"
+        class="wrap-form">
         <div class="wrapper-form">
+            <!-- Name camp -->
             <div class="form-group">
                 <span class="p-float-label">
                     <input
                         formControlName="name" 
                         pInputText 
-                        id="username" />
+                        id="username"
+                        [ngClass]="{ 'success': name?.valid }" />
                     <label htmlFor="username">
                         Nombre
                         <span class="required">*</span>
@@ -35,18 +41,24 @@
                     </div>
                 </div>
             </div>
+            <!-- Surname camp -->
             <div class="form-group">
                 <span class="p-float-label">
-                    <input pInputText id="surname" />
+                    <input 
+                        formControlName="surname"
+                        pInputText 
+                        id="surname" />
                     <label htmlFor="surname">Apellidos</label>
                 </span>
             </div>
+            <!-- Company camp -->
             <div class="form-group">
                 <span class="p-float-label">
                     <input 
                         formControlName="company" 
                         pInputText 
-                        id="company" />
+                        id="company"
+                        [ngClass]="{ 'success': company?.valid }" />
                     <label htmlFor="company">
                         Empresa
                         <span class="required">*</span>
@@ -69,12 +81,14 @@
                     </div>
                 </div>
             </div>
+            <!-- E-mail camp -->
             <div class="form-group">
                 <span class="p-float-label">
                     <input 
                         formControlName="email" 
                         pInputText 
-                        id="e-mail" />
+                        id="e-mail"
+                        [ngClass]="{ 'success': email?.valid }" />
                     <label htmlFor="e-mail">
                         Correo electrónico
                         <span class="required">*</span>
@@ -97,18 +111,24 @@
                     </div>
                 </div>
             </div>
+            <!-- Phone camp -->
             <div class="form-group">
                 <span class="p-float-label">
-                    <input pInputText id="phone" />
+                    <input
+                        formControlName="phone" 
+                        pInputText 
+                        id="phone" />
                     <label htmlFor="phone">Teléfono de contacto</label>
                 </span>
             </div>
+            <!-- Subject camp -->
             <div class="form-group">
                 <span class="p-float-label">
                     <input 
                         formControlName="subject" 
                         pInputText 
-                        id="subject" />
+                        id="subject"
+                        [ngClass]="{ 'success': subject?.valid }" />
                     <label htmlFor="subject">
                         Asunto
                         <span class="required">*</span>
@@ -131,6 +151,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Message camp -->
             <div class="form-group textarea">
                 <span class="p-float-label">
                     <textarea 
@@ -138,7 +159,8 @@
                         id="textarea" 
                         rows="5" 
                         cols="30" 
-                        pInputTextarea></textarea>
+                        pInputTextarea
+                        [ngClass]="{ 'success': message?.valid }"></textarea>
                     <label for="textarea">
                         Escriba aquí su comentario
                         <span class="required">*</span>
@@ -165,18 +187,25 @@
         <div class="wrap-buttons">
             <div class="wrap-button-reset">
                 <p-button 
+                    (click)="resetFormError()"
                     label="Resetear formulario" 
                     [outlined]="true" 
                     severity="danger" />
             </div>
             <div class="wrap-button-send">
                 <p-button 
+                    (click)="onSubmit()"
                     type="submit"
                     [disabled]="formContact.invalid"
                     label="Enviar formulario" 
                     [outlined]="true" 
                     severity="info" />
+                </div>
             </div>
-        </div>
-    </form>
+        </form>
+    <p-toast 
+        [showTransformOptions]="'translateY(100%)'" 
+        [showTransitionOptions]="'1000ms'" 
+        [hideTransitionOptions]="'1000ms'" 
+        [showTransformOptions]="'translateX(100%)'" />
 </div>

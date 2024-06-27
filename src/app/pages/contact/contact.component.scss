@@ -30,6 +30,12 @@
                     flex: 1 1 calc(50% - 20px);
                     margin-top: 0;
                 }
+                &.textarea {
+                    flex: 1 1 100%;
+                    textarea {
+                        resize: none;
+                    }
+                }
                 .p-float-label,
                 input,
                 label,
@@ -38,11 +44,10 @@
                     .required {
                         color: var(--brand-color-red, #f53a3a);
                     }
-                }
-                &.textarea {
-                    flex: 1 1 100%;
-                    textarea {
-                        resize: none;
+                    &.success {
+                        border-radius: 4px;
+                        border: 2px solid var(--border-success, #28a745);
+                        background: var(--bg-border-success, #20a53f2f)
                     }
                 }
                 .wrap-alert {
