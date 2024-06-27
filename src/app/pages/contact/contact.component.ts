@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  public description: string = 'Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e intentaré responderle con la mayor brevedad prosible:'
+
   constructor( ) { }
 
 }

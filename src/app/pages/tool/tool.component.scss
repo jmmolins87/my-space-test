@@ -11,7 +11,7 @@
         align-items: flex-end;
         justify-content: center;
         max-width: 75%;
-        margin: 50px auto;
+        margin: 0 auto 50px;
         .wrapper-tool {
             .wrap-title {
                 position: relative;
@@ -49,7 +49,7 @@
                 }
             }
             .wrap-subtitle {
-                margin-top: 5px;
+                margin-top: 15px;
             }
             .wrap-tags {
                 display: flex;
@@ -58,15 +58,17 @@
                 align-items: center;
                 flex-wrap: wrap;
                 gap: 10px;
-                margin-top: 10px;
+                margin-top: 20px;
                 padding: 0;
-
                 li {
                     list-style: none;
                 }
             }
             .wrap-description {
                 line-height: 1.5;
+                @media (min-width: 600px) {
+                    margin-top: 30px;
+                }
             }
         }
         .wrap-buttons {
@@ -82,6 +84,7 @@
                 flex-direction: row;
                 width: auto;
                 gap: 0;
+                margin-top: 30px;
             }
             .wrap-button-go {
                 order: 2;

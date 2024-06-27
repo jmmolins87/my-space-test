@@ -1,81 +1,86 @@
 @use './../../../styles.scss';
 
-.wrap-form {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    @media screen and (min-width: 992px) {
-        max-width: 75%;
-        margin: 30px auto;
-    }
-    .wrapper-form {
+.wrap-contact {
+    .wrap-form {
         display: flex;
         box-sizing: border-box;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        @media screen and (min-width: 600px) {
-            gap: 40px 20px;
-            margin-top: 40px;
-        }
-        .form-group {
-            flex: 1 1 100%;
-            margin-top: 35px;
-            @media screen and (min-width: 600px) {
-                flex: 1 1 calc(50% - 20px);
-                margin-top: 0;
-            }
-            .p-float-label,
-            input,
-            label,
-            textarea {
-                width: 100%;
-            }
-            .p-float-label textarea{
-                resize: none;
-            }
-        }
-    }
-    ::ng-deep .wrap-buttons {
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+        flex-direction: column;
         width: 100%;
-        margin-top: 30px;
-        gap: 16px;
-        @media (min-width: 600px) {
-            justify-content: flex-end;
-            flex-direction: row;
-            gap: 0;
+        margin: 0 auto;
+        @media screen and (min-width: 992px) {
+            max-width: 75%;
+            margin: 30px auto;
         }
-        .wrap-button-reset {
-            order: 2;
+        .wrapper-form {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            @media screen and (min-width: 768px) {
+                gap: 40px 20px;
+                margin-top: 40px;
+            }
+            .form-group {
+                flex: 1 1 100%;
+                margin-top: 35px;
+                @media screen and (min-width: 768px) {
+                    flex: 1 1 calc(50% - 20px);
+                    margin-top: 0;
+                }
+                .p-float-label,
+                input,
+                label,
+                textarea {
+                    width: 100%;
+                }
+                &.textarea{
+                    flex: 1 1 100%;
+                    textarea {
+                        resize: none;
+                    }
+                }
+            }
+        }
+        ::ng-deep .wrap-buttons {
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            @media (min-width: 600px) {
-                margin-right: 14px;
+            margin-top: 30px;
+            gap: 16px;
+            @media (min-width: 768px) {
+                justify-content: flex-end;
+                flex-direction: row;
+                gap: 0;
+            }
+            .wrap-button-reset {
+                order: 2;
+                width: 100%;
+                @media (min-width: 768px) {
+                    margin-right: 14px;
+                    order: 1;
+                    order: 2;
+                    width: fit-content;
+                }
+                .p-button.p-button-danger.p-button-outlined {
+                    @extend %p-button-danger;
+                }
+            }
+            .wrap-button-send {
                 order: 1;
-                order: 2;
-                width: fit-content;
-            }
-            .p-button.p-button-danger.p-button-outlined {
-                @extend %p-button-danger;
-            }
-        }
-        .wrap-button-send {
-            order: 1;
-            width: 100%;
-            @media (min-width: 600px) {
-                order: 2;
-                width: fit-content;
-            }
-            .p-button.p-button-info.p-button-outlined {
-                @extend %p-button-info;
+                width: 100%;
+                @media (min-width: 768px) {
+                    order: 2;
+                    width: fit-content;
+                }
+                .p-button.p-button-info.p-button-outlined {
+                    @extend %p-button-info;
+                }
             }
         }
     }

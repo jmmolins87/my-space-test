@@ -68,6 +68,10 @@ h1 {
     font-size: var(--font-size-title-h1, 28px);
     color: var(--brand-color-blue);
     border-bottom: 1px solid var(--brand-color-blue);
+    margin-top: 30px;
+    @media (min-width: 768px) {
+        margin-top: 50px;
+    }
 }
 h2 {
     font-size: var(--font-size-title-h2-mobile, 16px);
@@ -143,5 +147,38 @@ p, span, a {
 
 // * ScrollTop
 .p-scrolltop.p-link {
-    background: var(--brand-color-red, #f53a3a);
+    background: var(--brand-color-red);
+}
+
+// * Custom scrollbar 
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-moz-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--brand-color-red-hover); 
+    border-radius: 5px;
+}  
+::-moz-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--brand-color-red-hover); 
+    border-radius: 5px;
+}  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--brand-color-blue); 
+    border-radius: 10px;
+} 
+::-moz-scrollbar-thumb {
+    background: var(--brand-color-blue); 
+    border-radius: 10px;
+} 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-color-blue-hover); 
+}
+::-moz-scrollbar-thumb:hover {
+    background: var(--brand-color-blue-hover); 
 }
