@@ -168,7 +168,7 @@
                         Escriba aquí su comentario
                         <span class="required">*</span>
                     </label>
-                    <p class="counterCharacters">Número de carácteres: {{ characterCount }} de {{ maxCharacters }}</p>
+                    <p class="counter-characters">Número de carácteres: {{ characterCount }} de {{ maxCharacters }}</p>
                 </span>
                 <div 
                     *ngIf="formContact.controls['message']?.invalid && (formContact.controls['message']?.dirty || formContact.controls['message']?.touched)" 
@@ -215,7 +215,7 @@
         </form>
     <p-toast 
         [showTransformOptions]="'translateY(100%)'" 
-        [showTransitionOptions]="'1000ms'" 
-        [hideTransitionOptions]="'1000ms'" 
+        [showTransitionOptions]="'500ms'" 
+        [hideTransitionOptions]="'500ms'" 
         [showTransformOptions]="'translateX(100%)'" />
 </div>

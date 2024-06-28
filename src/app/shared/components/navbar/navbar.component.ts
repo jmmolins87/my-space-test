@@ -17,7 +17,12 @@ export class NavbarComponent implements OnInit {
   public items: MenuItem[] | undefined;
   public countries: CountriesLanguage[] | undefined;
   public selectedCountry: CountriesLanguage | undefined;
-  public dataLogo!: LogoDispData;
+  public dataLogo: LogoDispData = {
+    src: '',
+    alt: 'Logo jmmc',
+    title: 'Logo jmmc',
+    height: 30
+  };
 
   constructor( 
     private itemsNavbar: SharedService,

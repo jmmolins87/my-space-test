@@ -53,8 +53,8 @@
                     .required {
                         color: var(--brand-color-red, #f53a3a);
                     }
-                    .counterCharacters {
-                        margin-top: 0;
+                    .counter-characters {
+                        margin: 0;
                     }
                     &.success {
                         border-radius: 4px;

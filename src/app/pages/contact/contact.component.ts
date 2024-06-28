@@ -101,7 +101,7 @@ export class ContactComponent {
   }
 
   showInfoToast() {
-    this.messageService.add({ severity: 'info', summary: '¡¡Ojo!! Ha reseteado el correo', detail: '¡¡Volvamos a empezar!!' });
+    this.messageService.add({ severity: 'info', summary: '¡¡Ojo!! Ha reseteado el correo', detail: 'Volvamos a empezar' });
   }
 
   updateCounter() {
