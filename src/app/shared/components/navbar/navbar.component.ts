@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'primeng/api';       
 
 import { SharedService } from '../../services/shared.service';
 
@@ -17,12 +17,7 @@ export class NavbarComponent implements OnInit {
   public items: MenuItem[] | undefined;
   public countries: CountriesLanguage[] | undefined;
   public selectedCountry: CountriesLanguage | undefined;
-  public dataLogo: LogoDispData = {
-    src: '',
-    alt: 'Logo jmmc',
-    title: 'Logo jmmc',
-    height: 30
-  };
+  public dataLogo!: LogoDispData;
 
   constructor( 
     private itemsNavbar: SharedService,

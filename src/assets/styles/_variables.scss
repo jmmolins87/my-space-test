@@ -1,0 +1,51 @@
+
+
+
+:root {
+
+    // * Brand 
+    --brand-color-red: #f53a3a;
+    --brand-color-red-hover: #ff000022;
+    --brand-color-blue: #42d1f3;
+    --brand-color-blue-hover: #42d0f336;
+    
+    // * Colros
+    --bg-navbar: #343e4d33;
+    --bg-footer: #343e4d;
+    --text-color: #989899;
+    --text-color-button-white: #fff
+    // alert
+    --alert-success: #28a745;
+    --bg-alert-success: #20a53f2f;
+    --alert-danger: var(--brand-color-red);
+    --bg-alert-danger: #8a0b0b48;
+    --alert-info: var(--brand-color-blue);
+    --bg-alert-info: #1b8ba75b;
+    --alert-warning: #ecec10;
+    --bg-alert-warning: #ecec105b;
+    // Skeleton
+    --skeleton-color: #353131;
+    // Tools
+    --photoshop-primary: #31AAFF;
+    --photoshop-primary-hover: #1e7dc1;
+    --photoshop-secondary: #021733;
+    --photoshop-secondary-hover: #010407;
+    --illustrator-primary: #f89c01;
+    --illustrator-primary-hover: #300003;
+    --illustrator-secondary: #7e5103;
+    --illustrator-secondary-hover: #140304;
+    // Border
+    --border-success: #28a745;
+    --bg-border-success: #20a53f2f;
+
+    // * Fonts
+    // sizes
+    --font-size-text: 16px;
+    --font-size-text-footer: 14px;
+    --font-size-title-h1: 28px;
+    --font-size-title-h2: 22px;
+    --font-size-title-h2-mobile: 16px;
+    --font-size-title-h3: 18px;
+    // types
+    --font-family: "Montserrat", sans-serif;
+}

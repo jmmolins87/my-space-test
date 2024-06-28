@@ -168,7 +168,7 @@
                         Escriba aquí su comentario
                         <span class="required">*</span>
                     </label>
-                    <p class="counterCharacters">Número de carácteres: {{ characterCount }}</p>
+                    <p class="counterCharacters">Número de carácteres: {{ characterCount }} de {{ maxCharacters }}</p>
                 </span>
                 <div 
                     *ngIf="formContact.controls['message']?.invalid && (formContact.controls['message']?.dirty || formContact.controls['message']?.touched)" 
