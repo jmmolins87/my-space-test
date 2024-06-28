@@ -8,6 +8,7 @@ import { MessageService } from 'primeng/api';
 
 import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
 import { alertStatus } from './../../components/alert/alert.config';
+import { EmailService } from './../../services/email.service';
 
 
 @Component({
@@ -39,7 +40,8 @@ export class ContactComponent {
   
   constructor ( 
     private fb: FormBuilder, 
-    private messageService: MessageService ) {
+    private messageService: MessageService,
+    private emailService: EmailService ) {
     setTimeout(() => {
       this.showSkeleton = true;
     }, 2000);
@@ -74,13 +76,20 @@ export class ContactComponent {
     return this.formContact.get('message');
   }
 
-  onSubmit() {
-    if (this.formContact.valid) {
-      this.showSuccessToast();
-      this.formContact.reset();
-    } else {
-      this.resetFormError();
-    }
+  sendEmail() {
+    if( this.formContact.valid ) {
+      this.emailService.sendEmail( this.formContact.value ).subscribe(
+        response => {
+          this.showSuccessToast();
+          this.formContact.reset();
+          console.log(response);
+        },
+        error => {
+          console.log(error);
+          this.showErrorToast(JSON.stringify(error));
+        }
+      );
+    } 
   }
 
   resetFormError() {
@@ -96,8 +105,8 @@ export class ContactComponent {
     this.messageService.add({ severity: 'success', summary: '¡¡Genial!!', detail: 'Su mensaje se envió correctamente' });
   }
 
-  showErrorToast() {
-    this.messageService.add({ severity: 'error', summary: '¡¡Ups!!', detail: 'Ha habido un error al enviar el correo' });
+  showErrorToast(error?: string) {
+    this.messageService.add({ severity: 'error', summary: '¡¡Ups!!', detail: error });
   }
 
   showInfoToast() {

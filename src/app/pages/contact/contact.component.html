@@ -7,7 +7,7 @@
     <h3 class="description">* Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e intentaré responderle con la mayor brevedad prosible:</h3>
     <form 
         [formGroup]="formContact" 
-        (ngSubmit)="onSubmit()"  
+        (ngSubmit)="sendEmail()"  
         autocomplete="off"
         class="wrap-form">
         <div class="wrapper-form">
@@ -204,7 +204,7 @@
             </div>
             <div class="wrap-button-send">
                 <p-button 
-                    (click)="onSubmit()"
+                    (click)="sendEmail()"
                     type="submit"
                     [disabled]="formContact.invalid"
                     label="Enviar formulario" 
