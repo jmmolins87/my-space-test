@@ -2,6 +2,10 @@
 
 .card {
     position: relative;
+    transition: all .2s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 20px 1px var(--brand-color-blue, #42d1f3);
+    }
     .wrap-icon-favorite {
         position: absolute;
         top: 10px;
@@ -10,35 +14,35 @@
     img {
         padding: 15px;  
     }
-}
-.description {
-    max-width: 100%;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: auto;
-    max-height: 65px;
-}
-.wrap-tags {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-    padding: 0;
-    li {
-        list-style: none;
+    .description {
+        max-width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: auto;
+        max-height: 65px;
     }
-}
-::ng-deep {
-    .p-button.p-button-info.p-button-outlined {
-        @extend %p-button-info;
+    .wrap-tags {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+        padding: 0;
+        li {
+            list-style: none;
+        }
     }
-    .p-button.p-button-danger.p-button-outlined {
-        @extend %p-button-danger;
+    ::ng-deep {
+        .p-button.p-button-info.p-button-outlined {
+            @extend %p-button-info;
+        }
+        .p-button.p-button-danger.p-button-outlined {
+            @extend %p-button-danger;
+        }
     }
 }
