@@ -1,221 +1,154 @@
-<app-skeleton 
-    *ngIf="!showSkeleton" 
-    [typeSkeleton]="contactSkeleton" />
+<app-skeleton *ngIf="!showSkeleton" [typeSkeleton]="contactSkeleton" />
 
 <div *ngIf="showSkeleton" class="wrap-contact">
-    <h1>Contacto</h1>
-    <h3 class="description">* Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e intentaré responderle con la mayor brevedad prosible:</h3>
-    <form 
-        [formGroup]="formContact" 
-        (ngSubmit)="sendEmail()"  
-        autocomplete="off"
-        class="wrap-form">
-        <div class="wrapper-form">
-            <!-- Name camp -->
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input
-                        formControlName="name" 
-                        pInputText 
-                        id="username"
-                        [ngClass]="{ 'success': name?.valid }" />
-                    <label htmlFor="username">
-                        Nombre
-                        <span class="required">*</span>
-                    </label>
-                </span>
-                <div 
-                    *ngIf="formContact.controls['name']?.invalid && (formContact.controls['name']?.dirty || formContact.controls['name']?.touched)" 
-                    class="wrap-alert">
-                    <div *ngIf="name?.errors?.['required']">
-                        <app-alert 
-                            [textAlert]="'El nombre es obligatorio'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
+    <app-header [title]="title" />
+    <div class="container">
+        <h3 class="description">* Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e
+            intentaré responderle con la mayor brevedad prosible:</h3>
+        <form [formGroup]="formContact" (ngSubmit)="sendEmail()" autocomplete="off" class="wrap-form">
+            <div class="wrapper-form">
+                <!-- Name camp -->
+                <div class="form-group">
+                    <span class="p-float-label">
+                        <input formControlName="name" pInputText id="username" [ngClass]="{ 'success': name?.valid }" />
+                        <label htmlFor="username">
+                            Nombre
+                            <span class="required">*</span>
+                        </label>
+                    </span>
+                    <div *ngIf="formContact.controls['name']?.invalid && (formContact.controls['name']?.dirty || formContact.controls['name']?.touched)"
+                        class="wrap-alert">
+                        <div *ngIf="name?.errors?.['required']">
+                            <app-alert [textAlert]="'El nombre es obligatorio'" [statusAlert]="alertStatus.DANGER"
+                                [showIcon]="true" />
+                        </div>
+                        <div *ngIf="name?.errors?.['minlength']">
+                            <app-alert [textAlert]="'El nombre debe tener un mínimo de 3 caracteres'"
+                                [statusAlert]="alertStatus.DANGER" [showIcon]="true" />
+                        </div>
                     </div>
-                    <div *ngIf="name?.errors?.['minlength']">
-                        <app-alert 
-                            [textAlert]="'El nombre debe tener un mínimo de 3 caracteres'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
+                </div>
+                <!-- Surname camp -->
+                <div class="form-group">
+                    <span class="p-float-label">
+                        <input formControlName="surname" pInputText id="surname" />
+                        <label htmlFor="surname">Apellidos</label>
+                    </span>
+                </div>
+                <!-- Company camp -->
+                <div class="form-group">
+                    <span class="p-float-label">
+                        <input formControlName="company" pInputText id="company"
+                            [ngClass]="{ 'success': company?.valid }" />
+                        <label htmlFor="company">
+                            Empresa
+                            <span class="required">*</span>
+                        </label>
+                    </span>
+                    <div *ngIf="formContact.controls['company']?.invalid && (formContact.controls['company']?.dirty || formContact.controls['company']?.touched)"
+                        class="wrap-alert">
+                        <div *ngIf="company?.errors?.['required']">
+                            <app-alert [textAlert]="'La empresa es obligatoria'" [statusAlert]="alertStatus.DANGER"
+                                [showIcon]="true" />
+                        </div>
+                        <div *ngIf="company?.errors?.['minlength']">
+                            <app-alert [textAlert]="'La empresa debe tener un mínimo de 3 caracteres'"
+                                [statusAlert]="alertStatus.DANGER" [showIcon]="true" />
+                        </div>
+                    </div>
+                </div>
+                <!-- E-mail camp -->
+                <div class="form-group">
+                    <span class="p-float-label">
+                        <input formControlName="email" pInputText id="e-mail" [ngClass]="{ 'success': email?.valid }" />
+                        <label htmlFor="e-mail">
+                            Correo electrónico
+                            <span class="required">*</span>
+                        </label>
+                    </span>
+                    <div *ngIf="formContact.controls['email']?.invalid && (formContact.controls['email']?.dirty || formContact.controls['email']?.touched)"
+                        class="wrap-alert">
+                        <div *ngIf="email?.errors?.['required']">
+                            <app-alert [textAlert]="'El e-mail es obligatorio'" [statusAlert]="alertStatus.DANGER"
+                                [showIcon]="true" />
+                        </div>
+                        <div *ngIf="email?.errors?.['email']">
+                            <app-alert [textAlert]="'El e-mail tiene un formato incorrecto'"
+                                [statusAlert]="alertStatus.DANGER" [showIcon]="true" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Phone camp -->
+                <div class="form-group">
+                    <span class="p-float-label">
+                        <input formControlName="phone" pInputText id="phone" />
+                        <label htmlFor="phone">Teléfono de contacto</label>
+                    </span>
+                </div>
+                <!-- Subject camp -->
+                <div class="form-group">
+                    <span class="p-float-label">
+                        <input formControlName="subject" pInputText id="subject"
+                            [ngClass]="{ 'success': subject?.valid }" />
+                        <label htmlFor="subject">
+                            Asunto
+                            <span class="required">*</span>
+                        </label>
+                    </span>
+                    <div *ngIf="formContact.controls['subject']?.invalid && (formContact.controls['subject']?.dirty || formContact.controls['subject']?.touched)"
+                        class="wrap-alert">
+                        <div *ngIf="subject?.errors?.['required']">
+                            <app-alert [textAlert]="'El e-mail es obligatorio'" [statusAlert]="alertStatus.DANGER"
+                                [showIcon]="true" />
+                        </div>
+                        <div *ngIf="subject?.errors?.['minlength']">
+                            <app-alert [textAlert]="'El asunto debe tener un mínimo de 3 caracteres'"
+                                [statusAlert]="alertStatus.DANGER" [showIcon]="true" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Message camp -->
+                <div class="form-group textarea">
+                    <span class="p-float-label">
+                        <textarea formControlName="message" id="textarea" rows="5" cols="30" pInputTextarea
+                            [(ngModel)]="messageCharactres" (input)="updateCounter()"
+                            [ngClass]="{ 'success': message?.valid }">
+                        </textarea>
+                        <label for="textarea">
+                            Escriba aquí su comentario
+                            <span class="required">*</span>
+                        </label>
+                        <p class="counter-characters">Número de carácteres: {{ characterCount }} de {{ maxCharacters }}
+                        </p>
+                    </span>
+                    <div *ngIf="formContact.controls['message']?.invalid && (formContact.controls['message']?.dirty || formContact.controls['message']?.touched)"
+                        class="wrap-alert">
+                        <div *ngIf="message?.errors?.['required']">
+                            <app-alert [textAlert]="'El mensaje es obligatorio'" [statusAlert]="alertStatus.DANGER"
+                                [showIcon]="true" />
+                        </div>
+                        <div *ngIf="message?.errors?.['minlength']">
+                            <app-alert [textAlert]="'El mensaje debe tener un mínimo de 10 caracteres'"
+                                [statusAlert]="alertStatus.DANGER" [showIcon]="true" />
+                        </div>
+                        <div *ngIf="message?.errors?.['maxlength']">
+                            <app-alert [textAlert]="'El mensaje debe tener un máximo de 1000 carácteres'"
+                                [statusAlert]="alertStatus.DANGER" [showIcon]="true" />
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Surname camp -->
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input 
-                        formControlName="surname"
-                        pInputText 
-                        id="surname" />
-                    <label htmlFor="surname">Apellidos</label>
-                </span>
-            </div>
-            <!-- Company camp -->
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input 
-                        formControlName="company" 
-                        pInputText 
-                        id="company"
-                        [ngClass]="{ 'success': company?.valid }" />
-                    <label htmlFor="company">
-                        Empresa
-                        <span class="required">*</span>
-                    </label>
-                </span>
-                <div 
-                    *ngIf="formContact.controls['company']?.invalid && (formContact.controls['company']?.dirty || formContact.controls['company']?.touched)" 
-                    class="wrap-alert">
-                    <div *ngIf="company?.errors?.['required']">
-                        <app-alert 
-                            [textAlert]="'La empresa es obligatoria'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
-                    <div *ngIf="company?.errors?.['minlength']">
-                        <app-alert 
-                            [textAlert]="'La empresa debe tener un mínimo de 3 caracteres'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
+            <div class="wrap-buttons">
+                <div class="wrap-button-reset">
+                    <p-button (click)="resetForm()" label="Resetear formulario" [outlined]="true" severity="danger" />
                 </div>
-            </div>
-            <!-- E-mail camp -->
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input 
-                        formControlName="email" 
-                        pInputText 
-                        id="e-mail"
-                        [ngClass]="{ 'success': email?.valid }" />
-                    <label htmlFor="e-mail">
-                        Correo electrónico
-                        <span class="required">*</span>
-                    </label>
-                </span>
-                <div 
-                    *ngIf="formContact.controls['email']?.invalid && (formContact.controls['email']?.dirty || formContact.controls['email']?.touched)" 
-                    class="wrap-alert">
-                    <div *ngIf="email?.errors?.['required']">
-                        <app-alert 
-                            [textAlert]="'El e-mail es obligatorio'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
-                    <div *ngIf="email?.errors?.['email']">
-                        <app-alert 
-                            [textAlert]="'El e-mail tiene un formato incorrecto'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
-                </div>
-            </div>
-            <!-- Phone camp -->
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input
-                        formControlName="phone" 
-                        pInputText 
-                        id="phone" />
-                    <label htmlFor="phone">Teléfono de contacto</label>
-                </span>
-            </div>
-            <!-- Subject camp -->
-            <div class="form-group">
-                <span class="p-float-label">
-                    <input 
-                        formControlName="subject" 
-                        pInputText 
-                        id="subject"
-                        [ngClass]="{ 'success': subject?.valid }" />
-                    <label htmlFor="subject">
-                        Asunto
-                        <span class="required">*</span>
-                    </label>
-                </span>
-                <div 
-                    *ngIf="formContact.controls['subject']?.invalid && (formContact.controls['subject']?.dirty || formContact.controls['subject']?.touched)" 
-                    class="wrap-alert">
-                    <div *ngIf="subject?.errors?.['required']">
-                        <app-alert 
-                            [textAlert]="'El e-mail es obligatorio'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
-                    <div *ngIf="subject?.errors?.['minlength']">
-                        <app-alert 
-                            [textAlert]="'El asunto debe tener un mínimo de 3 caracteres'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
-                </div>
-            </div>
-            <!-- Message camp -->
-            <div class="form-group textarea">
-                <span class="p-float-label">
-                    <textarea 
-                        formControlName="message" 
-                        id="textarea" 
-                        rows="5" 
-                        cols="30" 
-                        pInputTextarea
-                        [(ngModel)]="messageCharactres" 
-                        (input)="updateCounter()"
-                        [ngClass]="{ 'success': message?.valid }">
-                    </textarea>
-                    <label for="textarea">
-                        Escriba aquí su comentario
-                        <span class="required">*</span>
-                    </label>
-                    <p class="counter-characters">Número de carácteres: {{ characterCount }} de {{ maxCharacters }}</p>
-                </span>
-                <div 
-                    *ngIf="formContact.controls['message']?.invalid && (formContact.controls['message']?.dirty || formContact.controls['message']?.touched)" 
-                    class="wrap-alert">
-                    <div *ngIf="message?.errors?.['required']">
-                        <app-alert 
-                            [textAlert]="'El mensaje es obligatorio'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
-                    <div *ngIf="message?.errors?.['minlength']">
-                        <app-alert 
-                            [textAlert]="'El mensaje debe tener un mínimo de 10 caracteres'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
-                    <div *ngIf="message?.errors?.['maxlength']">
-                        <app-alert 
-                            [textAlert]="'El mensaje debe tener un máximo de 1000 carácteres'"
-                            [statusAlert]="alertStatus.DANGER"
-                            [showIcon]="true" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrap-buttons">
-            <div class="wrap-button-reset">
-                <p-button 
-                    (click)="resetForm()"
-                    label="Resetear formulario" 
-                    [outlined]="true" 
-                    severity="danger" />
-            </div>
-            <div class="wrap-button-send">
-                <p-button 
-                    (click)="sendEmail()"
-                    type="submit"
-                    [disabled]="formContact.invalid"
-                    label="Enviar formulario" 
-                    [outlined]="true" 
-                    severity="info" />
+                <div class="wrap-button-send">
+                    <p-button (click)="sendEmail()" type="submit" [disabled]="formContact.invalid"
+                        label="Enviar formulario" [outlined]="true" severity="info" />
                 </div>
             </div>
         </form>
-    <p-toast 
-        [showTransformOptions]="'translateY(100%)'" 
-        [showTransitionOptions]="'500ms'" 
-        [hideTransitionOptions]="'500ms'" 
-        [showTransformOptions]="'translateX(100%)'" />
+    </div>
+    <p-toast [showTransformOptions]="'translateY(100%)'" [showTransitionOptions]="'500ms'"
+        [hideTransitionOptions]="'500ms'" [showTransformOptions]="'translateX(100%)'" />
 </div>

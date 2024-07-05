@@ -35,6 +35,7 @@
               "src/styles.scss"
             ],
             "scripts": [
+              "node_modules/sass-loader/dist/cjs.js",
               "node_modules/chart.js/dist/chart.js"
             ]
           },

@@ -19,6 +19,8 @@ import { EmailService } from './../../services/email.service';
 })
 export class ContactComponent {
 
+  public title: string = 'Contacto';
+
   public showSkeleton: boolean = false;
   public contactSkeleton = typeSkeleton.CONTACT;
 

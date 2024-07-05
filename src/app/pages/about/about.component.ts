@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  public title: string = 'Sobre mi'
+
 }
