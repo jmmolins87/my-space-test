@@ -36,7 +36,7 @@ export class ToolComponent implements OnInit {
 
   routeActive() {
     this._activatedRoute.params.pipe(
-      switchMap(({ id }) => this._toolById.getToolById(id))
+      switchMap(({ id }) => this._toolById.getToolByIdEsp(id))
     ).subscribe(tool => {
       if (!tool) return this._router.navigate(['/404']);
 

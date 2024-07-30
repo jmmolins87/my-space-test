@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
-import { environments } from '../../environments/environments.prod';
+import { environments } from './../../environments/environments';
 
-import { Tool } from '../interfaces/tool.interface';
+import { Tool } from './../interfaces/tool.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -21,12 +21,13 @@ export class PagesService {
     return this._http.get<any>( this.errorJson );
   }
 
-  get tools(): Observable<Tool[]> {
-    return this._http.get<Tool[]>( `${ this.baseUrl }/tools` );
+  // Datos en Español
+  get toolsEsp(): Observable<Tool[]> {
+    return this._http.get<Tool[]>( `${ this.baseUrl }/tools_esp.json` );
   }
 
-  getToolById( id: string ): Observable<Tool | undefined> {
-    return this._http.get<Tool | undefined>( `${ this.baseUrl }/tools/${ id }`)
+  getToolByIdEsp( id: string ): Observable<Tool | undefined> {
+    return this._http.get<Tool | undefined>( `${ this.baseUrl }/tools_esp/${ id }.json`)
   }
 
 }

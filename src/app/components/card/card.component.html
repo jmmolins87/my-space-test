@@ -15,7 +15,7 @@
         </ng-template>
         <p class="description">{{ tool.description }}</p>
         <p-button 
-            [routerLink]="['/tool', tool.id]"
+            [routerLink]="['/tool', tool.id - 1]"
             label="Leer más" 
             [outlined]="true" 
             severity="info"

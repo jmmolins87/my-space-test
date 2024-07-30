@@ -1,6 +1,5 @@
 {
-    "tools": [
-        
+    "tools_esp": [
         {
             "id": 1,
             "title": "Adobe Photoshop",
@@ -350,5 +349,8 @@
             "skill": 25,
             "restSkill": 75
         }
-    ]
+    ],
+    "contact_esp": {
+        "text": "* Si desea ponerse en contacto conmigo, por favor, rellene el siguiente formulario e intentaré responderle con la mayor brevedad prosible:"
+    }
 }

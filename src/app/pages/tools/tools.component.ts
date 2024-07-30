@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 import { PagesService } from '../../services/pages-services.service';
 
+import { alertStatus } from './../../components/alert/alert.config'
+import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
+
 import { Tool } from '../../interfaces/tool.interface';
 
-import { alertStatus } from './../../components/alert/alert.config'
-
-import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
 
 
 @Component({
@@ -30,11 +30,11 @@ export class ToolsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.importTools();
+    this.importToolsEsp();
   }
 
-  importTools() {
-    this._toolsService.tools.subscribe((tools: Tool[]) => {
+  importToolsEsp() {
+    this._toolsService.toolsEsp.subscribe((tools: Tool[]) => {
       this.tools = tools;
       this.showSkeleton = false;
     });
