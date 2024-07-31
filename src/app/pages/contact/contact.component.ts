@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { 
   FormBuilder, 
   FormGroup, 
@@ -6,9 +6,11 @@ import {
 } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 
+import { EmailService } from './../../services/email.service';
+import { PagesService } from './../../services/pages-services.service';
+
 import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
 import { alertStatus } from './../../components/alert/alert.config';
-import { EmailService } from './../../services/email.service';
 
 
 @Component({
@@ -17,12 +19,14 @@ import { EmailService } from './../../services/email.service';
   styleUrls: ['./contact.component.scss'],
   providers: [MessageService]
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
 
   public title: string = 'Contacto';
+  public description: string = '';
 
   public showSkeleton: boolean = false;
   public contactSkeleton = typeSkeleton.CONTACT;
+  public titleSkeleton = typeSkeleton.TITLE;
 
   public alertStatus = alertStatus;
 
@@ -41,12 +45,17 @@ export class ContactComponent {
   });
   
   constructor ( 
+    private _pagesService: PagesService,
     private fb: FormBuilder, 
     private messageService: MessageService,
     private emailService: EmailService ) {
     setTimeout(() => {
       this.showSkeleton = true;
     }, 2000);
+  }
+
+  ngOnInit() {
+    this.importDescriptionEsp();
   }
 
   // Los gets sirven para poder acceder a los campos del formulario de una forma más sencilla y rápida.
@@ -117,6 +126,13 @@ export class ContactComponent {
 
   updateCounter() {
     this.characterCount = this.messageCharactres.length;
+  }
+
+  importDescriptionEsp() {
+    this._pagesService.descriptionContactEsp.subscribe((description: string) => {
+      this.description = description;
+      this.showSkeleton = false;
+    });
   }
 
 }

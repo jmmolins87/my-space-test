@@ -33,6 +33,9 @@ export class SkeletonComponent implements OnInit {
       case typeSkeleton.CONTACT:
         this.classSkeleton = 'contact';
         break;
+      case typeSkeleton.TITLE:
+        this.classSkeleton = 'title';
+        break;
     }
   }
 

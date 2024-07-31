@@ -21,13 +21,17 @@ export class PagesService {
     return this._http.get<any>( this.errorJson );
   }
 
-  // Datos en Español
+  // ** Datos en Español
   get toolsEsp(): Observable<Tool[]> {
     return this._http.get<Tool[]>( `${ this.baseUrl }/tools_esp.json` );
   }
-
+  
   getToolByIdEsp( id: string ): Observable<Tool | undefined> {
     return this._http.get<Tool | undefined>( `${ this.baseUrl }/tools_esp/${ id }.json`)
+  }
+  
+  get descriptionContactEsp(): Observable<string> {
+    return this._http.get<string>( `${ this.baseUrl }/contact_desc_esp.json` );
   }
 
 }

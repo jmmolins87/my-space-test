@@ -1,3 +1,11 @@
-<div class="wrap-about">
-    <p>About work's!</p>
+<div class="container">
+    <app-skeleton 
+        *ngIf="!showSkeleton" 
+        [typeSkeleton]="titleSkeleton" />
+    <app-title 
+        *ngIf="showSkeleton" 
+        [title]="title" />
+    <div class="wrap-about">
+        <p>About work's!</p>
+    </div>
 </div>

@@ -1,11 +1,19 @@
-<div class="wrap-cards">
-    <div *ngFor="let tool of tools" class="wrap-card">
-        <app-skeleton 
-            *ngIf="!showSkeleton" 
-            [typeSkeleton]="cardToolSkeleton" />
-        <app-card 
-            *ngIf="showSkeleton" 
-            [tool]="tool" />
+<div class="container">
+    <app-skeleton 
+        *ngIf="!showSkeleton" 
+        [typeSkeleton]="titleSkeleton" />
+    <app-title 
+        *ngIf="showSkeleton" 
+        [title]="title" />
+    <div class="wrap-cards">
+        <div *ngFor="let tool of tools" class="wrap-card">
+            <app-skeleton 
+                *ngIf="!showSkeleton" 
+                [typeSkeleton]="cardToolSkeleton" />
+            <app-card 
+                *ngIf="showSkeleton" 
+                [tool]="tool" />
+        </div>
     </div>
 </div>
 

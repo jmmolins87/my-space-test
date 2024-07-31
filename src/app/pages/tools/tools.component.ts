@@ -16,12 +16,14 @@ import { Tool } from '../../interfaces/tool.interface';
 })
 export class ToolsComponent implements OnInit {
 
+  public title: string = 'Herramientas';
   public tools: Tool[] = [];
   public textAlert: string = 'No se pudo conectar a la base de datos';
   public alertStatus: alertStatus = alertStatus.DANGER;
   public isConnected!: boolean;
   public showSkeleton: boolean = false;
   public cardToolSkeleton = typeSkeleton.CARD_TOOL;
+  public titleSkeleton = typeSkeleton.TITLE;  
 
   constructor( private _toolsService: PagesService ) {
     setTimeout(() => {

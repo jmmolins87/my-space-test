@@ -5,6 +5,9 @@
 }
 
 .wrap-skeleton {
+    &.title {
+        margin-top: 65px;
+    }
     &.card-tool {
         margin-bottom: 20px;
     }

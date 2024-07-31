@@ -7,6 +7,7 @@ import { PipesModule } from '../pipes/pipes.module';
 import { CardComponent } from './card/card.component';
 import { AlertComponent } from './alert/alert.component';
 import { ChartComponent } from './chart/chart.component';
+import { TitleComponent } from './title/title.component';
 
 
 
@@ -14,7 +15,8 @@ import { ChartComponent } from './chart/chart.component';
   declarations: [
     CardComponent,
     AlertComponent,
-    ChartComponent
+    ChartComponent,
+    TitleComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { ChartComponent } from './chart/chart.component';
   exports: [
     CardComponent,
     AlertComponent,
-    ChartComponent
+    ChartComponent,
+    TitleComponent
   ]
 })
 export class ComponentsModule { }
