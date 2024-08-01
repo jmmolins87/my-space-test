@@ -1,11 +1,11 @@
-<app-skeleton 
-    *ngIf="!showSkeleton" 
-    [typeSkeleton]="titleSkeleton" />
-<app-skeleton 
-    *ngIf="!showSkeleton" 
-    [typeSkeleton]="contactSkeleton" />
 
 <div class="container">
+    <app-skeleton 
+        *ngIf="!showSkeleton" 
+        [typeSkeleton]="titleSkeleton" />
+    <app-skeleton 
+        *ngIf="!showSkeleton" 
+        [typeSkeleton]="contactSkeleton" />
     <div *ngIf="showSkeleton" class="wrap-contact">
         <app-title [title]="title" />
         <h3 class="description">{{ description }}</h3>
