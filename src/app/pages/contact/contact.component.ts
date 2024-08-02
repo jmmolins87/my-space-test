@@ -56,6 +56,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.importDescriptionEsp();
+    this.sendEmail();
+    this.resetFormError();
   }
 
   // Los gets sirven para poder acceder a los campos del formulario de una forma más sencilla y rápida.
