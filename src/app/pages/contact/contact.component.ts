@@ -9,7 +9,7 @@ import { MessageService } from 'primeng/api';
 import { EmailService } from './../../services/email.service';
 import { PagesService } from './../../services/pages-services.service';
 
-import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
+import { typeSkeleton } from './../../shared/components/skeleton/skeleton.config';
 import { alertStatus } from './../../components/alert/alert.config';
 
 
@@ -95,10 +95,8 @@ export class ContactComponent implements OnInit {
         response => {
           this.showSuccessToast();
           this.formContact.reset();
-          console.log(response);
         },
         error => {
-          console.log(error);
           this.showErrorToast(JSON.stringify(error));
         }
       );

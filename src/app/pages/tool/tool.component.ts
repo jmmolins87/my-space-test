@@ -3,11 +3,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { switchMap } from 'rxjs';
 
-import { PagesService } from '../../services/pages-services.service';
+import { PagesService } from './../../services/pages-services.service';
 
-import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
+import { typeSkeleton } from './../../shared/components/skeleton/skeleton.config';
 
-import { Tool } from '../../interfaces/tool.interface';
+import { Tool } from './../../interfaces/tool.interface';
 
 
 @Component({

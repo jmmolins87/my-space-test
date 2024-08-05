@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PagesService } from '../../services/pages-services.service';
+import { PagesService } from './../../services/pages-services.service';
 
 import { alertStatus } from './../../components/alert/alert.config'
-import { typeSkeleton } from '../../shared/components/skeleton/skeleton.config';
+import { typeSkeleton } from './../../shared/components/skeleton/skeleton.config';
 
-import { Tool } from '../../interfaces/tool.interface';
+import { Tool } from './../../interfaces/tool.interface';
 
 
 
