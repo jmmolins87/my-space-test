@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { PrimeNGConfig } from 'primeng/api';
+import { TranslateService } from '@ngx-translate/core'; 
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class AppComponent implements OnInit {
   
-  constructor(private primengConfig: PrimeNGConfig) {}
+  constructor(private primengConfig: PrimeNGConfig, private translateService: TranslateService) {}
 
   ngOnInit() {
     this.primengConfig.ripple = true;
@@ -19,6 +20,13 @@ export class AppComponent implements OnInit {
       menu: 1000,     // overlay menus
       tooltip: 1100   // tooltip
     };
+    this.translateService.setDefaultLang('en')
+  }
+
+  
+  translate(lang: string) {
+    this.translateService.use(lang);
+    this.translateService.get('primeng').subscribe(res => this.primengConfig.setTranslation(res));
   }
   
 }
