@@ -7,7 +7,7 @@
     class="wrap-tool">
     <div class="wrapper-tool">
         <div class="wrap-title">
-            <h1 class="tool-title">{{ tool.title }}</h1>
+            <app-title [title]="tool.title" />
             <div class="wrap-icon-favorite">
                 <i [ngStyle]="{'color':tool.favorite === true ? 'var(--brand-color-red)' : ''}"
                     style="font-size: 1.2rem;" class="pi pi-heart-fill"></i>

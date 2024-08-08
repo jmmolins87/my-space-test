@@ -1,11 +1,19 @@
 
 <div class="wrap-bg-video">
-    <p-button 
-        (click)="manageSound()"
-        [outlined]="true" 
-        [icon]="isMuted ? 'pi pi-volume-up' : 'pi pi-volume-off'" 
-        severity="danger" 
-        class="btn-unmuted" />
+    <div class="wrap-buttons">
+        <p-button 
+            (click)="manageSound()"
+            [outlined]="true" 
+            severity="danger"  
+            [icon]="isMuted ? 'pi pi-volume-up' : 'pi pi-volume-off'" 
+            class="btn btn-unmuted" />
+        <p-button 
+            (click)="manageReproduction()"
+            [outlined]="true" 
+            severity="info"
+            [icon]="isPlay ? 'pi pi-pause' : 'pi pi-play'" 
+            class="btn btn-reproduction" />
+    </div>
     <video 
         [src]=srcVideo
         (canplay)="manageSound()"
@@ -13,7 +21,6 @@
         autoplay
         loop
         muted
-        id="bgVideo"
         class="bg-home">
     </video>
 </div>

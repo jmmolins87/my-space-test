@@ -15,6 +15,7 @@ export class ChartComponent implements OnInit {
 
   public data: any;
   public options: any;
+  public skills: string = 'Habilidades';
 
   @Input()
   public dataChart!: DataChart;
@@ -28,7 +29,7 @@ export class ChartComponent implements OnInit {
     const textColor = documentStyle.getPropertyValue('--text-color');
 
     this.data = {
-      labels: ['Habiliadadess'],
+      labels: [this.skills],
       datasets: [
         {
           data: [this.dataChart.skill, this.dataChart.restSkill],

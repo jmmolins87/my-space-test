@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
 
+// ** PrimeNg Config Styles
+@import "primeng/resources/themes/bootstrap4-dark-purple/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
 // ** My Config Styles
 @import './assets/styles/variables';
 @import './assets/styles/extends';
@@ -8,12 +13,6 @@
 @import './assets/styles/grid';
 @import './assets/styles/fonts';
 @import './assets/styles/scrollbar-custom';
-
-// ** PrimeNg Config Styles
-@import "primeng/resources/themes/bootstrap4-dark-purple/theme.css";
-@import "primeng/resources/primeng.css";
-@import "primeicons/primeicons.css";
-
 
 // ** Styles PrimeNg
 // ScrollTop Button

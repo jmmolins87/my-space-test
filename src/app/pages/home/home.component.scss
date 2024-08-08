@@ -2,14 +2,20 @@
 
 .wrap-bg-video {
     position: relative;
-    .btn-unmuted {
+    .wrap-buttons {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
         position: absolute;
         top: 50px;
-        left: 50px;
-        border: none;
-        background: transparent;
-        cursor: pointer;
-        z-index: 1;
+        left: 20px;
+        .btn {
+            cursor: pointer;
+            z-index: 1;    
+        }
     }
     .bg-home {
         width: 100vw;
@@ -21,6 +27,9 @@
         }
     }
     ::ng-deep {
+        .p-button.p-button-info.p-button-outlined {
+            @extend %p-button-info;
+        }
         .p-button.p-button-danger.p-button-outlined {
             @extend %p-button-danger;
         }
