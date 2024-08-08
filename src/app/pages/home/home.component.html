@@ -1,4 +1,19 @@
 
 <div class="wrap-bg-video">
-    <video src="assets/video/bg-home.mp4" autoplay class="bg-home"></video>
+    <p-button 
+        (click)="manageSound()"
+        [outlined]="true" 
+        [icon]="isMuted ? 'pi pi-volume-up' : 'pi pi-volume-off'" 
+        severity="danger" 
+        class="btn-unmuted" />
+    <video 
+        [src]=srcVideo
+        (canplay)="manageSound()"
+        #videoPlayer
+        autoplay
+        loop
+        muted
+        id="bgVideo"
+        class="bg-home">
+    </video>
 </div>
