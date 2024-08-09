@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 3500;
+const port = 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -17,16 +17,16 @@ app.post('/send-email', async (req, res) => {
 
     // Configure the email transporter
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'iCloud',
         auth: {
-            user: 'jmmolins87@gmail.com', // your email
-            pass: '07870787Jm!' // your email password
+            user: 'jmmolins87@icloud.com', // your email
+            pass: 'Julio1987!' // your email password
         }
     });
 
     // Email data
     let mailOptions = {
-        from: 'jmmolins87@gmail.com', // your email
+        from: 'jmmolins87@icloud.com', // your email
         to: email,
         subject: subject,
         html: `
