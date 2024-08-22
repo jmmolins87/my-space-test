@@ -1,5 +1,9 @@
-<div class="card">
-    <div class="wrap-icon-favorite">
+<div 
+    pAnimateOnScroll 
+    enterClass="fadeinleft" 
+    leaveClass="fadeoutleft"
+    class="card animation-duration-1000">
+    <div class="wrap-icon-favorite ">
         <i 
             [ngStyle]="{'color':tool.favorite === true ? 'var(--brand-color-red)' : ''}" 
             class="pi pi-heart-fill"></i>

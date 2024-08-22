@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { ChartModule } from 'primeng/chart';
@@ -15,6 +16,7 @@ import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   exports: [
+    AnimateOnScrollModule,
     ButtonModule,
     CardModule,
     ChartModule,
