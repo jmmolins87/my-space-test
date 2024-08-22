@@ -2,7 +2,7 @@
     *ngIf="!showSkeleton" 
     [typeSkeleton]="toolSkeleton" />
 
-<div 
+<section 
     *ngIf="showSkeleton" 
     class="wrap-tool">
     <div class="wrapper-tool">
@@ -42,4 +42,4 @@
             <p-button (click)="goBack()" [label]="textBtnBack" [outlined]="true" severity="info" />
         </div>
     </div>
-</div>
+</section>
