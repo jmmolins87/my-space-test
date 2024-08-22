@@ -6,7 +6,7 @@
     <app-skeleton 
         *ngIf="!showSkeleton" 
         [typeSkeleton]="contactSkeleton" />
-    <div *ngIf="showSkeleton" class="wrap-contact">
+    <section *ngIf="showSkeleton" class="wrap-contact">
         <app-title [title]="title" />
         <h3 class="description">{{ description }}</h3>
         <form [formGroup]="formContact" (ngSubmit)="sendEmail()" autocomplete="off" class="wrap-form">
@@ -152,7 +152,7 @@
                 </div>
             </div>
         </form>
-    </div>
+    </section>
 </div>
 
 <p-toast 

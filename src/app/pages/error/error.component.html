@@ -3,13 +3,15 @@
         <iframe src="https://lottie.host/embed/6bf8b921-5e59-4d08-9e37-793a8a4b54de/CCkNLpbzes.json"></iframe>
         <p-scrollTop target="parent" styleClass="custom-scrolltop" [threshold]="100" icon="pi pi-arrow-up"></p-scrollTop>
     </section>
-    <h2>{{ textInfo }}</h2>
-    <section class="wrap-button">
-        <p-button 
-            (onClick)="goBack()"
-            [label]="textButton" 
-            [outlined]="true"
-            severity="danger">
-        </p-button>
+    <section>
+        <h2>{{ textInfo }}</h2>
+        <div class="wrap-button">
+            <p-button 
+                (onClick)="goBack()"
+                [label]="textButton" 
+                [outlined]="true"
+                severity="danger">
+            </p-button>
+        </div>
     </section>
 </div>
